@@ -1,6 +1,6 @@
 ---
 name: latchbio-integration
-description: Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.
+description: Use when this skill applies. Latch platform for bioinformatics workflows. Build pipelines with Latch SDK, @workflow/@task decorators, deploy serverless workflows, LatchFile/LatchDir, Nextflow/Snakemake integration.
 license: Unknown
 metadata:
   version: "1.0"
@@ -93,7 +93,7 @@ def my_workflow(input_file: LatchFile) -> LatchFile:
 
 ## When to Use This Skill
 
-This skill should be used when encountering any of the following scenarios:
+Use when encountering any of the following scenarios:
 
 **Workflow Development:**
 - "Create a Latch workflow for RNA-seq analysis"

@@ -1,7 +1,7 @@
 ---
 name: research-lookup
 description: 'Look up current research information using parallel-cli search (primary, fast web search), the Parallel Chat API (deep research), or Perplexity sonar-pro-search (academic paper searches). Automatically routes queries to the best backend. Use for finding papers, gathering research data, and verifying scientific information. Note: query text is transmitted to api.parallel.ai (PARALLEL_API_KEY) and, for academic searches, to openrouter.ai (OPENROUTER_API_KEY).'
-allowed-tools: Read Write Edit Bash
+allowed-utilities: Read Write Edit Bash
 license: MIT license
 compatibility: parallel-cli required (primary); PARALLEL_API_KEY and OPENROUTER_API_KEY optional for deep/academic backends
 metadata:
@@ -23,7 +23,7 @@ The skill automatically detects query type and routes to the optimal backend.
 
 ## When to Use This Skill
 
-Use this skill when you need:
+Use when you need:
 
 - **Current Research Information**: Latest studies, papers, and findings
 - **Literature Verification**: Check facts, statistics, or claims against current research
@@ -262,7 +262,7 @@ parallel-cli search "Global AI market size and growth projections 2025" \
 # Primary backend (parallel-cli) - REQUIRED
 # Install parallel-cli if not already available:
 curl -fsSL https://parallel.ai/install.sh | bash
-# Or: uv tool install "parallel-web-tools[cli]"
+# Or: uv utility install "parallel-web-utilities[cli]"
 
 # Authenticate:
 parallel-cli auth
@@ -448,9 +448,9 @@ This skill enhances scientific writing by providing:
 4. **Discussion Enhancement**: Support arguments with latest evidence — **save to `sources/`**
 5. **Citation Management**: Provide properly formatted citations — **save to `sources/`**
 
-## Complementary Tools
+## Complementary Utilities
 
-| Task | Tool |
+| Task | Utility |
 |------|------|
 | General web search (fast) | `parallel-cli search` (built into this skill) |
 | Academic-focused web search | `parallel-cli search --include-domains` (built into this skill) |
@@ -473,7 +473,7 @@ This skill enhances scientific writing by providing:
 - All backends: Cannot access proprietary or restricted databases
 
 **Fallback Behavior:**
-- If `parallel-cli` is not found, install with `curl -fsSL https://parallel.ai/install.sh | bash` or `uv tool install "parallel-web-tools[cli]"`
+- If `parallel-cli` is not found, install with `curl -fsSL https://parallel.ai/install.sh | bash` or `uv utility install "parallel-web-utilities[cli]"`
 - If parallel-cli search returns insufficient results, fall back to Perplexity or Parallel Chat API
 - If the selected backend's API key is missing, tries the other backend
 - If all backends fail, returns structured error response

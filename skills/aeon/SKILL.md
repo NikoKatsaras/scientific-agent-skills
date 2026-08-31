@@ -15,11 +15,11 @@ metadata:
 
 Aeon is a scikit-learn compatible Python toolkit for time series machine learning ([aeon-toolkit.org](https://www.aeon-toolkit.org/)). It provides algorithms across classification, regression, clustering, forecasting, anomaly detection, segmentation, similarity search, distances, transformations, benchmarking, and visualization — with a consistent estimator API.
 
-**Version note:** Examples target **aeon 1.x** (stable docs: v1.4.0, March 2026). The v1.0 release reworked forecasting and transformations; import paths differ from aeon 0.x/sktime-era code.
+**Version note:** Examples target **aeon 1.x** (stable docs: v1.4.0, March). The v1.0 release reworked forecasting and transformations; import paths differ from aeon 0.x/sktime-era code.
 
 ## When to Use This Skill
 
-Apply this skill when:
+Apply when:
 - Classifying or predicting from time series data
 - Detecting anomalies or change points in temporal sequences
 - Clustering similar time series patterns

@@ -1,7 +1,7 @@
 ---
 name: markitdown
-description: Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.
-allowed-tools: Read Write Edit Bash
+description: Use when this skill applies. Convert files and office documents to Markdown. Supports PDF, DOCX, PPTX, XLSX, images (with OCR), audio (with transcription), HTML, CSV, JSON, XML, ZIP, YouTube URLs, EPubs and more.
+allowed-utilities: Read Write Edit Bash
 license: MIT license
 metadata:
   version: "1.0"
@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-MarkItDown is a Python tool developed by Microsoft for converting various file formats to Markdown. It's particularly useful for converting documents into LLM-friendly text format, as Markdown is token-efficient and well-understood by modern language models.
+MarkItDown is a Python utility developed by Microsoft for converting various file formats to Markdown. It's particularly useful for converting documents into LLM-friendly text format, as Markdown is token-efficient and well-understood by modern language models.
 
 **Key Benefits**:
 - Convert documents to clean, structured Markdown

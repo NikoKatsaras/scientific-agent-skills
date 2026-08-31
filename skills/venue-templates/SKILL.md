@@ -1,6 +1,6 @@
 ---
 name: venue-templates
-description: Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for major scientific publication venues (Nature, Science, PLOS, IEEE, ACM), academic conferences (NeurIPS, ICML, CVPR, CHI), research posters, and grant proposals (NSF, NIH, DOE, DARPA). This skill should be used when preparing manuscripts for journal submission, conference papers, research posters, or grant proposals and need venue-specific formatting requirements and templates.
+description: Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for major scientific publication venues (Nature, Science, PLOS, IEEE, ACM), academic conferences (NeurIPS, ICML, CVPR, CHI), research posters, and grant proposals (NSF, NIH, DOE, DARPA). Use when preparing manuscripts for journal submission, conference papers, research posters, or grant proposals and need venue-specific formatting requirements and templates.
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
@@ -14,11 +14,11 @@ metadata:
 
 Access comprehensive LaTeX templates, formatting requirements, and submission guidelines for major scientific publication venues, academic conferences, research posters, and grant proposals. This skill provides ready-to-use templates and detailed specifications for successful academic submissions across disciplines.
 
-Use this skill when preparing manuscripts for journal submission, conference papers, research posters, or grant proposals and need venue-specific formatting requirements and templates.
+Use when preparing manuscripts for journal submission, conference papers, research posters, or grant proposals and need venue-specific formatting requirements and templates.
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Preparing a manuscript for submission to a specific journal (Nature, Science, PLOS, IEEE, etc.)
 - Writing a conference paper with specific formatting requirements (NeurIPS, ICML, CHI, etc.)
 - Creating an academic research poster for conferences

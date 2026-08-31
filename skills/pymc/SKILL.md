@@ -1,6 +1,6 @@
 ---
 name: pymc
-description: Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming and inference.
+description: Use when this skill applies. Bayesian modeling with PyMC. Build hierarchical models, MCMC (NUTS), variational inference, LOO/WAIC comparison, posterior checks, for probabilistic programming and inference.
 license: Apache License, Version 2.0
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ PyMC is a Python library for Bayesian modeling and probabilistic programming. Bu
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Building Bayesian models (linear/logistic regression, hierarchical models, time series, etc.)
 - Performing MCMC sampling or variational inference
 - Conducting prior/posterior predictive checks

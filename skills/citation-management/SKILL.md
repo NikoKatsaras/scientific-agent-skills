@@ -1,7 +1,7 @@
 ---
 name: citation-management
-description: Comprehensive citation management for academic research. Search Google Scholar and PubMed for papers, extract accurate metadata, validate citations, and generate properly formatted BibTeX entries. This skill should be used when you need to find papers, verify citation information, convert DOIs to BibTeX, or ensure reference accuracy in scientific writing.
-allowed-tools: Read Write Edit Bash
+description: Comprehensive citation management for academic research. Search Google Scholar and PubMed for papers, extract accurate metadata, validate citations, and generate properly formatted BibTeX entries. Use when you need to find papers, verify citation information, convert DOIs to BibTeX, or ensure reference accuracy in scientific writing.
+allowed-utilities: Read Write Edit Bash
 license: MIT License
 metadata:
   version: "1.0"
@@ -12,13 +12,13 @@ metadata:
 
 ## Overview
 
-Manage citations systematically throughout the research and writing process. This skill provides tools and strategies for searching academic databases (Google Scholar, PubMed), extracting accurate metadata from multiple sources (CrossRef, PubMed, arXiv), validating citation information, and generating properly formatted BibTeX entries.
+Manage citations systematically throughout the research and writing process. This skill provides utilities and strategies for searching academic databases (Google Scholar, PubMed), extracting accurate metadata from multiple sources (CrossRef, PubMed, arXiv), validating citation information, and generating properly formatted BibTeX entries.
 
 Critical for maintaining citation accuracy, avoiding reference errors, and ensuring reproducible research. Integrates seamlessly with the literature-review skill for comprehensive research workflows.
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Searching for specific papers on Google Scholar or PubMed
 - Converting DOIs, PMIDs, or arXiv IDs to properly formatted BibTeX
 - Extracting complete metadata for citations (authors, title, journal, year, etc.)
@@ -147,7 +147,7 @@ python scripts/search_pubmed.py \
 
 #### Quick DOI to BibTeX Conversion
 
-For single DOIs, use the quick conversion tool:
+For single DOIs, use the quick conversion utility:
 
 ```bash
 # Convert single DOI
@@ -553,7 +553,7 @@ The scripts use NCBI E-utilities API for programmatic access:
 
 See `references/pubmed_search.md` for complete API documentation.
 
-## Tools and Scripts
+## Utilities and Scripts
 
 ### search_google_scholar.py
 
@@ -1064,7 +1064,7 @@ python scripts/extract_metadata.py \
 - arXiv API: https://arxiv.org/help/api/
 - DataCite API: https://api.datacite.org/
 
-**Tools and Validators**:
+**Utilities and Validators**:
 - MeSH Browser: https://meshb.nlm.nih.gov/search
 - DOI Resolver: https://doi.org/
 - BibTeX Format: http://www.bibtex.org/Format/
@@ -1089,7 +1089,7 @@ pip install scholarly  # Google Scholar API wrapper
 pip install selenium  # For more robust Scholar scraping
 ```
 
-### Optional Tools
+### Optional Utilities
 
 ```bash
 # For advanced validation
@@ -1104,7 +1104,7 @@ The citation-management skill provides:
 1. **Comprehensive search capabilities** for Google Scholar and PubMed
 2. **Automated metadata extraction** from DOI, PMID, arXiv ID, URLs
 3. **Citation validation** with DOI verification and completeness checking
-4. **BibTeX formatting** with standardization and cleaning tools
+4. **BibTeX formatting** with standardization and cleaning utilities
 5. **Quality assurance** through validation and reporting
 6. **Integration** with scientific writing workflow
 7. **Reproducibility** through documented search and extraction methods

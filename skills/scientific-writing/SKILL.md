@@ -1,7 +1,7 @@
 ---
 name: scientific-writing
-description: Core skill for the deep research and writing tool. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.
-allowed-tools: Read Write Edit Bash
+description: Use when this skill applies. Core skill for the deep research and writing utility. Write scientific manuscripts in full paragraphs (never bullet points). Use two-stage process with (1) section outlines with key points using research-lookup then (2) convert to flowing prose. IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, reporting guidelines (CONSORT/STROBE/PRISMA), for research papers and journal submissions.
+allowed-utilities: Read Write Edit Bash
 license: MIT license
 metadata:
   version: "1.0"
@@ -12,7 +12,7 @@ metadata:
 
 ## Overview
 
-**This is the core skill for the deep research and writing tool**—combining AI-driven deep research with well-formatted written outputs. Every document produced is backed by comprehensive literature search and verified citations through the research-lookup skill.
+**This is the core skill for the deep research and writing utility**—combining AI-driven deep research with well-formatted written outputs. Every document produced is backed by comprehensive literature search and verified citations through the research-lookup skill.
 
 Scientific writing is a process for communicating research with precision and clarity. Write manuscripts using IMRAD structure, citations (APA/AMA/Vancouver), figures/tables, and reporting guidelines (CONSORT/STROBE/PRISMA). Apply this skill for research papers and journal submissions.
 
@@ -20,7 +20,7 @@ Scientific writing is a process for communicating research with precision and cl
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Writing or revising any section of a scientific manuscript (abstract, introduction, methods, results, discussion)
 - Structuring a research paper using IMRAD or other standard formats
 - Formatting citations and references in specific styles (APA, AMA, Vancouver, Chicago, IEEE)
@@ -650,7 +650,7 @@ This skill works effectively with:
 - **Data analysis skills**: For generating results to report
 - **Statistical analysis**: For determining appropriate statistical presentations
 - **Literature review skills**: For contextualizing research
-- **Figure creation tools**: For developing publication-quality visualizations
+- **Figure creation utilities**: For developing publication-quality visualizations
 - **Venue-templates skill**: For venue-specific writing styles and formatting (journal manuscripts)
 - **scientific_report.sty**: For professional reports, white papers, and technical documents
 

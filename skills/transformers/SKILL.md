@@ -16,7 +16,7 @@ The Hugging Face Transformers library provides access to thousands of pre-traine
 
 ## Installation
 
-Tested against **transformers 5.9.x** (stable; May 2026). Requires **Python 3.10+** and **PyTorch 2.4+**.
+Tested against **transformers 5.9.x** (stable; May). Requires **Python 3.10+** and **PyTorch 2.4+**.
 
 ```bash
 uv pip install "transformers[torch]>=5.9" huggingface_hub datasets evaluate accelerate

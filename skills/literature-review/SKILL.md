@@ -1,7 +1,7 @@
 ---
 name: literature-review
-description: Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.). This skill should be used when conducting systematic literature reviews, meta-analyses, research synthesis, or comprehensive literature searches across biomedical, scientific, and technical domains. Creates professionally formatted markdown documents and PDFs with verified citations in multiple citation styles (APA, Nature, Vancouver, etc.).
-allowed-tools: Read Write Edit Bash
+description: Conduct comprehensive, systematic literature reviews using multiple academic databases (PubMed, arXiv, bioRxiv, Semantic Scholar, etc.). Use when conducting systematic literature reviews, meta-analyses, research synthesis, or comprehensive literature searches across biomedical, scientific, and technical domains. Creates professionally formatted markdown documents and PDFs with verified citations in multiple citation styles (APA, Nature, Vancouver, etc.).
+allowed-utilities: Read Write Edit Bash
 license: MIT license
 metadata:
   version: "1.0"
@@ -14,11 +14,11 @@ metadata:
 
 Conduct systematic, comprehensive literature reviews following rigorous academic methodology. Search multiple literature databases, synthesize findings thematically, verify all citations for accuracy, and generate professional output documents in markdown and PDF formats.
 
-This skill uses the **parallel-web skill** (`parallel-cli search`) as the primary web search tool for broad academic literature discovery, supplemented by specialized database access skills (gget, bioservices, datacommons-client). It provides specialized tools for citation verification, result aggregation, and document generation.
+This skill uses the **parallel-web skill** (`parallel-cli search`) as the primary web search utility for broad academic literature discovery, supplemented by specialized database access skills (gget, bioservices, datacommons-client). It provides specialized utilities for citation verification, result aggregation, and document generation.
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Conducting a systematic literature review for research or publication
 - Synthesizing current knowledge on a specific topic across multiple sources
 - Performing meta-analysis or scoping reviews
@@ -208,7 +208,7 @@ Literature reviews follow a structured, multi-phase workflow:
    - Funding sources and conflicts of interest
 
 2. **Assess Study Quality**:
-   - **For RCTs**: Use Cochrane Risk of Bias tool
+   - **For RCTs**: Use Cochrane Risk of Bias utility
    - **For observational studies**: Use Newcastle-Ottawa Scale
    - **For systematic reviews**: Use AMSTAR 2
    - Rate each study: High, Moderate, Low, or Very Low quality
@@ -469,7 +469,7 @@ Prefer papers from:
 For any topic, identify foundational work by:
 1. **High citation count** (typically 500+ for papers 5+ years old)
 2. **Frequently cited by other included studies** (appears in many reference lists)
-3. **Published in Tier-1 venues** (Nature, Science, Cell family)
+3. **described in Tier-1 venues** (Nature, Science, Cell family)
 4. **Written by field pioneers** (often cited as establishing concepts)
 
 ## Best Practices
@@ -502,7 +502,7 @@ For any topic, identify foundational work by:
 4. **Identify gaps**: Note what's missing or understudied
 
 ### Quality and Reproducibility
-1. **Assess study quality**: Use appropriate quality assessment tools
+1. **Assess study quality**: Use appropriate quality assessment utilities
 2. **Verify all citations**: Run verify_citations.py script
 3. **Document methodology**: Provide enough detail for others to reproduce
 4. **Follow guidelines**: Use PRISMA for systematic reviews
@@ -642,7 +642,7 @@ This skill works seamlessly with other scientific skills:
 - Cochrane Handbook: https://training.cochrane.org/handbook
 - AMSTAR 2 (Review Quality): https://amstar.ca/
 
-**Tools:**
+**Utilities:**
 - MeSH Browser: https://meshb.nlm.nih.gov/search
 - PubMed Advanced Search: https://pubmed.ncbi.nlm.nih.gov/advanced/
 - Boolean Search Guide: https://www.ncbi.nlm.nih.gov/books/NBK3827/
@@ -654,11 +654,11 @@ This skill works seamlessly with other scientific skills:
 
 ## Dependencies
 
-### Required CLI Tools
+### Required CLI Utilities
 ```bash
 # parallel-cli (PRIMARY — for web search and URL extraction)
 curl -fsSL https://parallel.ai/install.sh | bash
-# Or: uv tool install "parallel-web-tools[cli]"
+# Or: uv utility install "parallel-web-utilities[cli]"
 # Authenticate: parallel-cli auth
 ```
 
@@ -667,7 +667,7 @@ curl -fsSL https://parallel.ai/install.sh | bash
 pip install requests  # For citation verification
 ```
 
-### Required System Tools
+### Required System Utilities
 ```bash
 # For PDF generation
 brew install pandoc  # macOS
@@ -693,7 +693,7 @@ This literature-review skill provides:
 4. **Citation verification** ensuring accuracy and credibility
 5. **Professional output** in markdown and PDF formats
 6. **Comprehensive guidance** covering the entire review process
-7. **Quality assurance** with verification and validation tools
+7. **Quality assurance** with verification and validation utilities
 8. **Reproducibility** through detailed documentation requirements
 
 Conduct thorough, rigorous literature reviews that meet academic standards and provide comprehensive synthesis of current knowledge in any domain.

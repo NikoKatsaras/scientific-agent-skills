@@ -48,7 +48,7 @@ results = task.inference(hypothesis_bank="./output/hypotheses.json")
 
 ## When to Use This Skill
 
-Use this skill when working on:
+Use when working on:
 - Generating scientific hypotheses from observational datasets
 - Testing multiple competing hypotheses systematically
 - Combining literature insights with empirical patterns
@@ -535,8 +535,8 @@ hypothesis-generation/
 **Key directories:**
 - **hypogenic/**: Main package with BaseTask and generation logic
 - **examples/**: Reference implementations for common workflows
-- **literature/**: Tools for PDF processing and literature extraction
-- **modules/**: External tool integrations (GROBID, etc.)
+- **literature/**: Utilities for PDF processing and literature extraction
+- **modules/**: External utility integrations (GROBID, etc.)
 
 ## Related Publications
 
@@ -624,7 +624,7 @@ git clone https://github.com/ChicagoHAI/Hypothesis-agent-datasets.git ./data
 
 - **Contributors:** 7+ active contributors
 - **Stars:** 89+ on GitHub
-- **Topics:** research-tool, interpretability, hypothesis-generation, scientific-discovery, llm-application
+- **Topics:** research-utility, interpretability, hypothesis-generation, scientific-discovery, llm-application
 
 For contributions or questions, visit the GitHub repository and check the issues page.
 
@@ -642,9 +642,9 @@ For contributions or questions, visit the GitHub repository and check the issues
 
 Scripts directory is available for:
 - Custom data preparation utilities
-- Format conversion tools
+- Format conversion utilities
 - Analysis and evaluation scripts
-- Integration with external tools
+- Integration with external utilities
 
 ### assets/
 

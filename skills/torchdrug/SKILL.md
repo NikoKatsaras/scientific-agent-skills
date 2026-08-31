@@ -15,7 +15,7 @@ TorchDrug is a comprehensive PyTorch-based machine learning toolbox for drug dis
 
 ## When to Use This Skill
 
-This skill should be used when working with:
+Use when working with:
 
 **Data Types:**
 - SMILES strings or molecular structures
@@ -43,7 +43,7 @@ This skill should be used when working with:
 
 ### Installation
 
-TorchDrug **0.2.1** (latest on PyPI, July 2023) requires **Python 3.7–3.10** and **PyTorch 1.8–2.0**. Install PyTorch and `torch-scatter` / `torch-cluster` first (wheel URL depends on your PyTorch and CUDA versions — see [installation docs](https://torchdrug.ai/docs/installation.html)).
+TorchDrug **0.2.1** (latest on PyPI, July) requires **Python 3.7–3.10** and **PyTorch 1.8–2.0**. Install PyTorch and `torch-scatter` / `torch-cluster` first (wheel URL depends on your PyTorch and CUDA versions — see [installation docs](https://torchdrug.ai/docs/installation.html)).
 
 ```bash
 uv pip install torch

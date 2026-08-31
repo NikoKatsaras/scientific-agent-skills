@@ -15,7 +15,7 @@ metadata:
 
 Stable Baselines3 (SB3) is a PyTorch-based library providing reliable implementations of reinforcement learning algorithms. This skill provides comprehensive guidance for training RL agents, creating custom environments, implementing callbacks, and optimizing training workflows using SB3's unified API.
 
-**Current upstream:** SB3 **2.8.0** (April 2026). Docs: [stable-baselines3.readthedocs.io](https://stable-baselines3.readthedocs.io/en/master/).
+**Current upstream:** SB3 **2.8.0** (April). Docs: [stable-baselines3.readthedocs.io](https://stable-baselines3.readthedocs.io/en/master/).
 
 ## Installation
 

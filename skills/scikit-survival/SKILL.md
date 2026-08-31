@@ -1,6 +1,6 @@
 ---
 name: scikit-survival
-description: Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival. Use this skill when working with censored survival data, performing time-to-event analysis, fitting Cox models, Random Survival Forests, Gradient Boosting models, or Survival SVMs, evaluating survival predictions with concordance index or Brier score, handling competing risks, or implementing any survival analysis workflow with the scikit-survival library.
+description: Comprehensive toolkit for survival analysis and time-to-event modeling in Python using scikit-survival. Use when working with censored survival data, performing time-to-event analysis, fitting Cox models, Random Survival Forests, Gradient Boosting models, or Survival SVMs, evaluating survival predictions with concordance index or Brier score, handling competing risks, or implementing any survival analysis workflow with the scikit-survival library.
 license: GPL-3.0 license
 metadata:
   version: "1.0"
@@ -17,7 +17,7 @@ Survival analysis aims to establish connections between covariates and the time 
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Performing survival analysis or time-to-event modeling
 - Working with censored data (right-censored, left-censored, or interval-censored)
 - Fitting Cox proportional hazards models (standard or penalized)

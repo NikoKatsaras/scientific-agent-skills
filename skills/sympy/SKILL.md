@@ -17,7 +17,7 @@ SymPy is a Python library for symbolic mathematics that enables exact computatio
 
 ## Installation
 
-Tested against **SymPy 1.14.0** (stable; April 2025). Requires **Python 3.9+**.
+Tested against **SymPy 1.14.0** (stable; April). Requires **Python 3.9+**.
 
 ```bash
 # Install SymPy using uv
@@ -36,7 +36,7 @@ print(sympy.__version__)
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Solving equations symbolically (algebraic, differential, systems of equations)
 - Performing calculus operations (derivatives, integrals, limits, series)
 - Manipulating and simplifying algebraic expressions

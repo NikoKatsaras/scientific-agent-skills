@@ -1,6 +1,6 @@
 ---
 name: neurokit2
-description: Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals. Use this skill when processing cardiovascular signals, brain activity, electrodermal responses, respiratory patterns, muscle activity, or eye movements. Applicable for heart rate variability analysis, event-related potentials, complexity measures, autonomic nervous system assessment, psychophysiology research, and multi-modal physiological signal integration.
+description: Comprehensive biosignal processing toolkit for analyzing physiological data including ECG, EEG, EDA, RSP, PPG, EMG, and EOG signals. Use when processing cardiovascular signals, brain activity, electrodermal responses, respiratory patterns, muscle activity, or eye movements. Applicable for heart rate variability analysis, event-related potentials, complexity measures, autonomic nervous system assessment, psychophysiology research, and multi-modal physiological signal integration.
 license: MIT license
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ NeuroKit2 is a comprehensive Python toolkit for processing and analyzing physiol
 
 ## When to Use This Skill
 
-Apply this skill when working with:
+Apply when working with:
 - **Cardiac signals**: ECG, PPG, heart rate variability (HRV), pulse analysis
 - **Brain signals**: EEG frequency bands, microstates, complexity, source localization
 - **Autonomic signals**: Electrodermal activity (EDA/GSR), skin conductance responses (SCR)
@@ -345,7 +345,7 @@ This skill includes comprehensive reference documentation organized by signal ty
 - **epochs_events.md**: Event-related analysis and epoch creation
 - **bio_module.md**: Multi-signal integration workflows
 
-Load specific reference files as needed using the Read tool to access detailed function documentation and parameters.
+Load specific reference files as needed using the Read utility to access detailed function documentation and parameters.
 
 ## Additional Resources
 

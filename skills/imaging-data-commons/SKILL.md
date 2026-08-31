@@ -19,7 +19,7 @@ Use the `idc-index` Python package to query and download public cancer imaging d
 
 **Current IDC Data Version: v23** (always verify with `IDCClient().get_idc_version()`)
 
-**Primary tool:** `idc-index` ([GitHub](https://github.com/imagingdatacommons/idc-index))
+**Primary utility:** `idc-index` ([GitHub](https://github.com/imagingdatacommons/idc-index))
 
 **CRITICAL - Check package version and upgrade if needed (run this FIRST):**
 
@@ -97,7 +97,7 @@ print(stats)
 | `dicomweb_guide.md` | DICOMweb endpoints, PACS integration |
 | `digital_pathology_guide.md` | Slide microscopy (SM), annotations (ANN), pathology workflows |
 | `bigquery_guide.md` | Full DICOM metadata, private elements (requires GCP) |
-| `cli_guide.md` | Command-line tools (`idc download`, manifest files) |
+| `cli_guide.md` | Command-line utilities (`idc download`, manifest files) |
 | `parquet_access_guide.md` | Direct Parquet queries via GCS (no idc-index install needed) |
 
 ## IDC Data Model
@@ -193,7 +193,7 @@ See `references/clinical_data_guide.md` for detailed workflows including value m
 | Direct Parquet (GCS) | No | Quick queries without installing idc-index; always uses latest data |
 | IDC Portal | No | Interactive exploration, manual selection, browser-based download |
 | BigQuery | Yes (GCP account) | Complex queries, full DICOM metadata |
-| DICOMweb proxy | No | Tool integration via DICOMweb API |
+| DICOMweb proxy | No | Utility integration via DICOMweb API |
 | Cloud storage (S3/GCS) | No | Direct file access, bulk downloads, custom pipelines |
 
 **Cloud storage organization**
@@ -212,7 +212,7 @@ See `references/cloud_storage_guide.md` for bucket details, access commands, UUI
 
 **DICOMweb access**
 
-IDC data is available via DICOMweb interface (Google Cloud Healthcare API implementation) for integration with PACS systems and DICOMweb-compatible tools.
+IDC data is available via DICOMweb interface (Google Cloud Healthcare API implementation) for integration with PACS systems and DICOMweb-compatible utilities.
 
 | Endpoint | Auth | Use Case |
 |----------|------|----------|
@@ -669,9 +669,9 @@ Common specialized indices: `seg_index` (segmentations), `ann_index` / `ann_grou
 
 See `references/bigquery_guide.md` for schemas, column descriptions, and query examples for these tables.
 
-### 8. Tool Selection Guide
+### 8. Utility Selection Guide
 
-| Task | Tool | Reference |
+| Task | Utility | Reference |
 |------|------|-----------|
 | Programmatic queries & downloads | `idc-index` | This document |
 | Interactive exploration | IDC Portal | https://portal.imaging.datacommons.cancer.gov/ |
@@ -794,7 +794,7 @@ See `references/use_cases.md` for complete end-to-end workflow examples includin
 **Issue: Downloaded DICOM files won't open**
 - **Cause:** Corrupted download or incompatible viewer
 - **Solution:**
-  - Check DICOM object type (Modality and SOPClassUID attributes) - some object types require specialized tools
+  - Check DICOM object type (Modality and SOPClassUID attributes) - some object types require specialized utilities
   - Verify file integrity (check file sizes)
   - Use pydicom to validate: `pydicom.dcmread(file, force=True)`
   - Try different DICOM viewer (3D Slicer, Horos, RadiAnt, QuPath)
@@ -819,7 +819,7 @@ The following skills complement IDC workflows for downstream analysis and visual
 - **pydicom** - Read, write, and manipulate downloaded DICOM files. Use for extracting pixel data, reading metadata, anonymization, and format conversion. Essential for working with IDC radiology data (CT, MR, PET).
 
 ### Pathology and Slide Microscopy
-See `references/digital_pathology_guide.md` for DICOM-compatible tools (highdicom, wsidicom, TIA-Toolbox, Slim viewer).
+See `references/digital_pathology_guide.md` for DICOM-compatible utilities (highdicom, wsidicom, TIA-Toolbox, Slim viewer).
 
 ### Metadata Visualization
 - **matplotlib** - Low-level plotting for full customization. Use for creating static figures summarizing IDC query results (bar charts of modalities, histograms of series counts, etc.).

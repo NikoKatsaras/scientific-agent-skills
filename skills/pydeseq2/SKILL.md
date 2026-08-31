@@ -1,6 +1,6 @@
 ---
 name: pydeseq2
-description: Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots, for RNA-seq analysis.
+description: Use when this skill applies. Differential gene expression analysis (Python DESeq2). Identify DE genes from bulk RNA-seq counts, Wald tests, FDR correction, volcano/MA plots, for RNA-seq analysis.
 license: MIT license
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ PyDESeq2 is a Python implementation of DESeq2 for differential expression analys
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Analyzing bulk RNA-seq count data for differential expression
 - Comparing gene expression between experimental conditions (e.g., treated vs control)
 - Performing multi-factor designs accounting for batch effects or covariates
@@ -313,7 +313,7 @@ python scripts/run_deseq2_analysis.py \
 - Result export (CSV, pickle)
 - Optional visualization (volcano and MA plots)
 
-Refer users to `scripts/run_deseq2_analysis.py` when they need a standalone analysis tool or want to batch process multiple datasets.
+Refer users to `scripts/run_deseq2_analysis.py` when they need a standalone analysis utility or want to batch process multiple datasets.
 
 ## Result Interpretation
 

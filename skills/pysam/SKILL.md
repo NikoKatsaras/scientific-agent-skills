@@ -1,6 +1,6 @@
 ---
 name: pysam
-description: Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calculate coverage, for NGS data processing pipelines.
+description: Use when this skill applies. Genomic file toolkit. Read/write SAM/BAM/CRAM alignments, VCF/BCF variants, FASTA/FASTQ sequences, extract regions, calculate coverage, for NGS data processing pipelines.
 license: MIT license
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ Pysam is a Python module for reading, manipulating, and writing genomic datasets
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Working with sequencing alignment files (BAM/CRAM)
 - Analyzing genetic variants (VCF/BCF)
 - Extracting reference sequences or gene regions

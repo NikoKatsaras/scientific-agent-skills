@@ -1,7 +1,7 @@
 ---
 name: xlsx
 description: "Create, edit, analyze, or convert Excel spreadsheets (.xlsx, .xlsm) where the workbook file is the primary deliverable. Use for formulas, formatting, financial models, multi-sheet workbooks, and tabular cleanup exported to Excel. Also applies to .csv/.tsv when the user wants spreadsheet output. Do NOT use for Word documents, HTML reports, standalone Python scripts, database pipelines, or Google Sheets API work."
-allowed-tools: Read Write Edit Bash Grep Glob
+allowed-utilities: Read Write Edit Bash Grep Glob
 license: Proprietary. LICENSE.txt has complete terms
 metadata:
   version: "1.1"
@@ -72,7 +72,7 @@ Unless otherwise stated by the user or existing template
 
 ## Overview
 
-A user may ask you to create, edit, or analyze the contents of an .xlsx file. You have different tools and workflows available for different tasks.
+A user may ask you to create, edit, or analyze the contents of an .xlsx file. You have different utilities and workflows available for different tasks.
 
 ## Installation
 
@@ -100,7 +100,7 @@ See [openpyxl security guidance](https://openpyxl.readthedocs.io/en/stable/index
 
 **System dependencies** (not installed via uv):
 
-| Tool | Purpose |
+| Utility | Purpose |
 |------|---------|
 | `soffice` (LibreOffice 7.x+) | Evaluates Excel formulas via `scripts/recalc.py` |
 | `gcc` | Only when Unix domain sockets are blocked; compiles a one-time shim into `~/.cache/xlsx-skill/lo-shim/` |
@@ -168,7 +168,7 @@ sheet['D20'] = '=AVERAGE(D2:D19)'
 This applies to ALL calculations - totals, percentages, ratios, differences, etc. The spreadsheet should be able to recalculate when source data changes.
 
 ## Common Workflow
-1. **Choose tool**: pandas for data, openpyxl for formulas/formatting
+1. **Choose utility**: pandas for data, openpyxl for formulas/formatting
 2. **Create/Load**: Create new workbook or load existing file
 3. **Modify**: Add/edit data, formulas, and formatting
 4. **Save**: Write to file

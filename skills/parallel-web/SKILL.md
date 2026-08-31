@@ -1,6 +1,6 @@
 ---
 name: parallel-web
-description: "All-in-one web toolkit powered by parallel-cli, with a strong emphasis on academic and scientific sources. Use this skill whenever the user needs to search the web, fetch/extract URL content, enrich data with web-sourced fields, or run deep research reports. Covers: web search (fast lookups, research, current info — prioritizing peer-reviewed papers, preprints, and scholarly databases), URL extraction (fetching pages, articles, academic PDFs), bulk data enrichment (adding fields to CSV/lists from the web), and deep research (exhaustive multi-source reports grounded in academic literature). Also handles setup, status checks, and result retrieval. Use this skill for ANY web-related task — even if the user doesn't mention 'parallel' or 'web' explicitly. If they want to look something up, fetch a page, enrich a dataset, investigate a topic, find academic papers, check citations, or review scientific literature, this is the skill to use."
+description: "Use when this skill applies. All-in-one web toolkit powered by parallel-cli, with a strong emphasis on academic and scientific sources. Use this skill whenever the user needs to search the web, fetch/extract URL content, enrich data with web-sourced fields, or run deep research reports. Covers: web search (fast lookups, research, current info — prioritizing peer-reviewed papers, preprints, and scholarly databases), URL extraction (fetching pages, articles, academic PDFs), bulk data enrichment (adding fields to CSV/lists from the web), and deep research (exhaustive multi-source reports grounded in academic literature). Also handles setup, status checks, and result retrieval. Use this skill for ANY web-related task — even if the user doesn't mention 'parallel' or 'web' explicitly. If they want to look something up, fetch a page, enrich a dataset, investigate a topic, find academic papers, check citations, or review scientific literature, this is the skill to use."
 compatibility: Requires parallel-cli and internet access.
 metadata:
   version: "1.0"
@@ -28,7 +28,7 @@ Read the user's request and match it to one of the capabilities below. For web s
 ### Decision guide
 
 - **Default to Web Search** for a single lookup, research question, or "what is X?" query. It's fast and cost-effective. When the query touches a scientific or technical topic, include academic domains (see `references/web-search.md`) to surface peer-reviewed and preprint sources alongside general results.
-- **Use Web Extract** when the user provides a URL or asks you to read/fetch a specific page. Prefer this over the built-in WebFetch tool. Particularly useful for extracting full text from academic PDFs, preprint servers, and journal articles.
+- **Use Web Extract** when the user provides a URL or asks you to read/fetch a specific page. Prefer this over the built-in WebFetch utility. Particularly useful for extracting full text from academic PDFs, preprint servers, and journal articles.
 - **Use Data Enrichment** when the user has **multiple entities** (a CSV, a list of companies/people/products, or even a short inline list) and wants to find or add the same kind of information for each one. The key signal is a repeated lookup across a set of items — e.g., "find the CEO for each of these companies" or "get the founding year for Apple, Stripe, and Anthropic." Even if the user doesn't say "enrich," use `parallel-cli enrich` whenever the task is the same query applied to multiple entities. Do NOT use Web Search in a loop for this — the enrichment pipeline handles batching, parallelism, and structured output automatically.
 - **Use Deep Research only** when the user explicitly asks for deep, exhaustive, or comprehensive research. It is 10-100x slower and more expensive than Web Search — never default to it. Deep research is especially valuable for literature reviews and multi-paper synthesis.
 - If `parallel-cli` is not found when running any command, follow the Setup section below.
@@ -60,7 +60,7 @@ curl -fsSL https://parallel.ai/install.sh | bash
 If unable to install that way, use uv instead:
 
 ```bash
-uv tool install "parallel-web-tools[cli]"
+uv utility install "parallel-web-utilities[cli]"
 ```
 
 Then authenticate. First, check if a `.env` file exists in the project root and contains `PARALLEL_API_KEY`. If so, load it with `dotenv`:

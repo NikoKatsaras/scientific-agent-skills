@@ -1,6 +1,6 @@
 ---
 name: scikit-bio
-description: Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.
+description: Use when this skill applies. Biological data toolkit. Sequence analysis, alignments, phylogenetic trees, diversity metrics (alpha/beta, UniFrac), ordination (PCoA), PERMANOVA, FASTA/Newick I/O, for microbiome analysis.
 license: BSD-3-Clause license
 allowed-tools: Read Write Edit Bash
 compatibility: Requires Python 3.10+ and scikit-bio 0.7+ (uv pip install scikit-bio). NumPy 2.0+ is required. Optional matplotlib/seaborn/plotly for plotting; biom-format for BIOM tables; polars/anndata for table interoperability.
@@ -17,7 +17,7 @@ scikit-bio is a comprehensive Python library for working with biological data. A
 
 ## When to Use This Skill
 
-This skill should be used when the user:
+Use when the user:
 - Works with biological sequences (DNA, RNA, protein)
 - Needs to read/write biological file formats (FASTA, FASTQ, GenBank, Newick, BIOM, etc.)
 - Performs sequence alignments or searches for motifs

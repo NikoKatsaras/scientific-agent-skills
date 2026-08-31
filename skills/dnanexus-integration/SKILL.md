@@ -1,6 +1,6 @@
 ---
 name: dnanexus-integration
-description: DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.
+description: Use when this skill applies. DNAnexus cloud genomics platform. Build apps/applets, manage data (upload/download), dxpy Python SDK, run workflows, FASTQ/BAM/VCF, for genomics pipeline development and execution.
 license: Unknown
 compatibility: Requires a DNAnexus account
 metadata:
@@ -16,7 +16,7 @@ DNAnexus is a cloud platform for biomedical data analysis and genomics. Build an
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Creating, building, or modifying DNAnexus apps/applets
 - Uploading, downloading, searching, or organizing files and records
 - Running analyses, monitoring jobs, creating workflows

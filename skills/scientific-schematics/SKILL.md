@@ -1,6 +1,6 @@
 ---
 name: scientific-schematics
-description: Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.1 Pro Preview for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.
+description: Use when this skill applies. Create publication-quality scientific diagrams using Nano Banana 2 AI with smart iterative refinement. Uses Gemini 3.1 Pro Preview for quality review. Only regenerates if quality is below threshold for your document type. Specialized in neural network architectures, system diagrams, flowcharts, biological pathways, and complex scientific visualizations.
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
@@ -112,7 +112,7 @@ Get an API key at: https://openrouter.ai/keys
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Creating neural network architecture diagrams (Transformers, CNNs, RNNs, etc.)
 - Illustrating system architectures and data flow diagrams
 - Drawing methodology flowcharts for study design (CONSORT, PRISMA)

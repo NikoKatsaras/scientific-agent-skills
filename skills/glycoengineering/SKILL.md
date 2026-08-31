@@ -1,6 +1,6 @@
 ---
 name: glycoengineering
-description: Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.
+description: Use when this skill applies. Analyze and engineer protein glycosylation. Scan sequences for N-glycosylation sequons (N-X-S/T), predict O-glycosylation hotspots, and access curated glycoengineering tools (NetOGlyc, GlycoShield, GlycoWorkbench). For glycoprotein engineering, therapeutic antibody optimization, and vaccine design.
 license: Unknown
 metadata:
   version: "1.0"
@@ -19,7 +19,7 @@ Glycosylation is the most common and complex post-translational modification (PT
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 
 - **Antibody engineering**: Optimize Fc glycosylation for enhanced ADCC, CDC, or reduced immunogenicity
 - **Therapeutic protein design**: Identify glycosylation sites that affect half-life, stability, or immunogenicity

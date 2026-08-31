@@ -1,7 +1,7 @@
 ---
 name: latex-posters
-description: "Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Support for conference presentations, academic posters, and scientific communication. Includes layout design, color schemes, multi-column formats, figure integration, and poster-specific best practices for visual communication."
-allowed-tools: Read Write Edit Bash
+description: "Use when this skill applies. Create professional research posters in LaTeX using beamerposter, tikzposter, or baposter. Support for conference presentations, academic posters, and scientific communication. Includes layout design, color schemes, multi-column formats, figure integration, and poster-specific best practices for visual communication."
+allowed-utilities: Read Write Edit Bash
 metadata:
   version: "1.0"
 ---
@@ -14,7 +14,7 @@ Research posters are a critical medium for scientific communication at conferenc
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Creating research posters for conferences, symposia, or poster sessions
 - Designing academic posters for university events or thesis defenses
 - Preparing visual summaries of research for public engagement
@@ -305,7 +305,7 @@ After passing the pre-generation review, identify visual elements needed:
 
 **⚠️ CRITICAL: Review Step 0 checklist before proceeding.**
 
-Use the appropriate tool for each element type:
+Use the appropriate utility for each element type:
 
 **For Schematics and Diagrams (scientific-schematics):**
 ```bash
@@ -1041,7 +1041,7 @@ Open PDF at 100% zoom and check:
 - [ ] Content fills entire page (no large white margins)
 - [ ] Consistent spacing between columns
 - [ ] Consistent spacing between blocks/sections
-- [ ] All elements aligned properly (use ruler tool)
+- [ ] All elements aligned properly (use ruler utility)
 - [ ] No overlapping text or figures
 - [ ] White space evenly distributed
 
@@ -1136,7 +1136,7 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 \
 **Color Blindness Simulation**:
 - [ ] View PDF through color blindness simulator
 - [ ] Information not lost with red-green simulation
-- [ ] Use Coblis (color-blindness.com) or similar tool
+- [ ] Use Coblis (color-blindness.com) or similar utility
 
 **Step 7: Content Proofreading**
 

@@ -1,7 +1,7 @@
 ---
 name: scientific-slides
-description: Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.
-allowed-tools: Read Write Edit Bash
+description: Use when this skill applies. Build slide decks and presentations for research talks. Use this for making PowerPoint slides, conference presentations, seminar talks, research presentations, thesis defense slides, or any scientific talk. Provides slide structure, design templates, timing guidance, and visual validation. Works with PowerPoint and LaTeX Beamer.
+allowed-utilities: Read Write Edit Bash
 license: MIT license
 metadata:
   version: "1.0"
@@ -27,7 +27,7 @@ Scientific presentations are a critical medium for communicating research, shari
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Preparing conference presentations (5-20 minutes)
 - Developing academic seminars (45-60 minutes)
 - Creating thesis or dissertation defense presentations
@@ -567,7 +567,7 @@ Implement iterative improvement through visual inspection. For complete workflow
 # Using the pdf_to_images script
 python scripts/pdf_to_images.py presentation.pdf review/slide --dpi 150
 
-# Or use pptx skill's thumbnail tool
+# Or use pptx skill's thumbnail utility
 python skills/pptx/scripts/thumbnail.py presentation.pptx review/thumb
 ```
 
@@ -976,7 +976,7 @@ python skills/pptx/scripts/thumbnail.py presentation.pptx review/grid
 - Problem: Running out of time, rush through or skip ending
 - Solution: Never skip conclusions, cut earlier content instead
 
-## Tools and Scripts
+## Utilities and Scripts
 
 ### Nano Banana Pro Scripts
 
@@ -1041,7 +1041,7 @@ From `skills/pptx/scripts/`:
 - `inventory.py`: Extract text content
 - `replace.py`: Update text programmatically
 
-### External Tools
+### External Utilities
 
 **Recommended**:
 - PDF viewer: For reviewing presentations

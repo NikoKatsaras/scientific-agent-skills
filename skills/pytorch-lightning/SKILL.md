@@ -1,6 +1,6 @@
 ---
 name: pytorch-lightning
-description: Deep learning framework (PyTorch Lightning / lightning package). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard, MLflow), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.
+description: Use when this skill applies. Deep learning framework (PyTorch Lightning / lightning package). Organize PyTorch code into LightningModules, configure Trainers for multi-GPU/TPU, implement data pipelines, callbacks, logging (W&B, TensorBoard, MLflow), distributed training (DDP, FSDP, DeepSpeed), for scalable neural network training.
 allowed-tools: Read Write Edit Bash
 license: Apache-2.0 license
 compatibility: Requires Python 3.10+ and lightning 2.6+ (or pytorch-lightning 2.6+). GPU training needs CUDA-capable PyTorch. Optional loggers (wandb, mlflow, comet-ml) and DeepSpeed require separate installs.
@@ -15,7 +15,7 @@ metadata:
 
 PyTorch Lightning is a deep learning framework that organizes PyTorch code to eliminate boilerplate while maintaining full flexibility. Automate training workflows, multi-device orchestration, and implement best practices for neural network training and scaling across multiple GPUs/TPUs.
 
-**Current upstream:** lightning 2.6.4 (PyPI, May 2026). Docs: [lightning.ai/docs/pytorch/stable](https://lightning.ai/docs/pytorch/stable/). Use `import lightning as L` (the `pytorch-lightning` package name still installs the same library).
+**Current upstream:** lightning 2.6.4 (PyPI, May). Docs: [lightning.ai/docs/pytorch/stable](https://lightning.ai/docs/pytorch/stable/). Use `import lightning as L` (the `pytorch-lightning` package name still installs the same library).
 
 ## Installation
 
@@ -32,7 +32,7 @@ uv pip install wandb mlflow        # specific loggers as needed
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Building, training, or deploying neural networks using PyTorch Lightning
 - Organizing PyTorch code into LightningModules
 - Configuring Trainers for multi-GPU/TPU training

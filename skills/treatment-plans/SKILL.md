@@ -1,6 +1,6 @@
 ---
 name: treatment-plans
-description: Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports general medical treatment, rehabilitation therapy, mental health care, chronic disease management, perioperative care, and pain management. Includes SMART goal frameworks, evidence-based interventions with minimal text citations, regulatory compliance (HIPAA), and professional formatting. Prioritizes brevity and clinical actionability.
+description: Use when this skill applies. Generate concise (3-4 page), focused medical treatment plans in LaTeX/PDF format for all clinical specialties. Supports general medical treatment, rehabilitation therapy, mental health care, chronic disease management, perioperative care, and pain management. Includes SMART goal frameworks, evidence-based interventions with minimal text citations, regulatory compliance (HIPAA), and professional formatting. Prioritizes brevity and clinical actionability.
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
@@ -23,7 +23,7 @@ Every treatment plan should include clear goals, specific interventions, defined
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Creating individualized treatment plans for patient care
 - Documenting therapeutic interventions for chronic disease management
 - Developing rehabilitation programs (physical therapy, occupational therapy, cardiac rehab)

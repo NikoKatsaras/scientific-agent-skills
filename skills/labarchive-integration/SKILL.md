@@ -1,6 +1,6 @@
 ---
 name: labarchive-integration
-description: Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with Protocols.io/Jupyter/REDCap, for programmatic ELN workflows.
+description: Use when this skill applies. Electronic lab notebook API integration. Access notebooks, manage entries/attachments, backup notebooks, integrate with Protocols.io/Jupyter/REDCap, for programmatic ELN workflows.
 license: Unknown
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ LabArchives is an electronic lab notebook platform for research documentation an
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Working with LabArchives REST API for notebook automation
 - Backing up notebooks programmatically
 - Creating or managing notebook entries and attachments

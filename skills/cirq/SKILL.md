@@ -14,7 +14,7 @@ Cirq is Google Quantum AI's open-source framework for designing, simulating, and
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Building, simulating, or optimizing NISQ circuits in Python
 - Running jobs on Google Quantum AI processors (via `cirq-google`) or partner backends (IonQ, Azure Quantum, AQT, Pasqal)
 - Modeling noise, compiling to hardware gatesets, or designing characterization experiments
@@ -24,7 +24,7 @@ For IBM hardware use **qiskit**; for quantum ML with autodiff use **pennylane**;
 
 ## Installation
 
-Requires Python 3.11+. Current stable release: **1.6.1** (August 2025). Vendor packages share the same version number.
+Requires Python 3.11+. Current stable release: **1.6.1** (August). Vendor packages share the same version number.
 
 ```bash
 uv pip install "cirq==1.6.1"

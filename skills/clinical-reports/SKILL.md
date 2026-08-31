@@ -1,6 +1,6 @@
 ---
 name: clinical-reports
-description: Write comprehensive clinical reports including case reports (CARE guidelines), diagnostic reports (radiology/pathology/lab), clinical trial reports (ICH-E3, SAE, CSR), and patient documentation (SOAP, H&P, discharge summaries). Full support with templates, regulatory compliance (HIPAA, FDA, ICH-GCP), and validation tools.
+description: Use when this skill applies. Write comprehensive clinical reports including case reports (CARE guidelines), diagnostic reports (radiology/pathology/lab), clinical trial reports (ICH-E3, SAE, CSR), and patient documentation (SOAP, H&P, discharge summaries). Full support with templates, regulatory compliance (HIPAA, FDA, ICH-GCP), and validation tools.
 allowed-tools: Read Write Edit Bash
 license: MIT License
 metadata:
@@ -18,7 +18,7 @@ Clinical report writing is the process of documenting medical information with p
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Writing clinical case reports for journal submission (CARE guidelines)
 - Creating diagnostic reports (radiology, pathology, laboratory)
 - Documenting clinical trial data and adverse events
@@ -72,7 +72,7 @@ For detailed guidance on creating schematics, refer to the scientific-schematics
 
 ### 1. Clinical Case Reports for Journal Publication
 
-Clinical case reports describe unusual clinical presentations, novel diagnoses, or rare complications. They contribute to medical knowledge and are published in peer-reviewed journals.
+Clinical case reports describe unusual clinical presentations, novel diagnoses, or rare complications. They contribute to medical knowledge and are described in peer-reviewed journals.
 
 #### CARE Guidelines Compliance
 

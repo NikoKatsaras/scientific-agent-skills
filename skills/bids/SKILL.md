@@ -1,7 +1,7 @@
 ---
 name: bids
 description: >
-  Use this skill when working with Brain Imaging Data Structure (BIDS) datasets:
+  Use when working with Brain Imaging Data Structure (BIDS) datasets:
   organizing neuroscience and biomedical data (MRI, EEG, MEG, iEEG, PET, microscopy,
   NIRS, motion capture, EMG, MR spectroscopy, behavioral), querying BIDS layouts,
   validating compliance, converting DICOM to BIDS, writing metadata sidecars, or
@@ -16,7 +16,7 @@ metadata:
 
 ## Overview
 
-The Brain Imaging Data Structure (BIDS) is a community standard for organizing and describing neuroscience and biomedical research datasets. It defines a consistent file naming convention, directory hierarchy, and metadata schema so that datasets are immediately understandable by humans and software tools alike. BIDS is governed by the BIDS Specification (currently v1.11.x) and is maintained by the community via the BIDS-Standard GitHub organization.
+The Brain Imaging Data Structure (BIDS) is a community standard for organizing and describing neuroscience and biomedical research datasets. It defines a consistent file naming convention, directory hierarchy, and metadata schema so that datasets are immediately understandable by humans and software utilities alike. BIDS is governed by the BIDS Specification (currently v1.11.x) and is maintained by the community via the BIDS-Standard GitHub organization.
 
 While BIDS originated for MRI, it has grown well beyond neuroimaging. The specification now covers 11 modalities spanning imaging, electrophysiology, and behavioral data:
 
@@ -32,7 +32,7 @@ The Python ecosystem for BIDS centers on **PyBIDS** (`pybids`) for querying and 
 
 ## When to Use This Skill
 
-Apply this skill when:
+Apply when:
 - Organizing raw neuroscience data (imaging, electrophysiology, behavioral) into BIDS-compliant directory structures
 - Querying an existing BIDS dataset to find specific files by subject, session, task, run, or modality
 - Validating a dataset against the BIDS specification before sharing or submission
@@ -683,9 +683,9 @@ layout = BIDSLayout("/data", database_path="/data/.pybids_cache.db")
 
 9. **Use BIDS URIs for provenance** - In derivatives, reference source files using BIDS URIs: `bids::sub-01/anat/sub-01_T1w.nii.gz`.
 
-10. **Prefer community tools** - Use established BIDS-Apps (fMRIPrep, MRIQC, QSIPrep) rather than custom pipelines when possible. They handle BIDS I/O correctly and produce BIDS-compliant derivatives.
+10. **Prefer community utilities** - Use established BIDS-Apps (fMRIPrep, MRIQC, QSIPrep) rather than custom pipelines when possible. They handle BIDS I/O correctly and produce BIDS-compliant derivatives.
 
-11. **Study bids-examples** - The [bids-examples](https://github.com/bids-standard/bids-examples) repository is the canonical collection of prototypical BIDS datasets covering different modalities and use cases (MRI, fMRI, DWI, EEG, MEG, iEEG, PET, ASL, genetics, derivatives, and more). Use it as a reference when structuring your own dataset, as test data for BIDS tools, or to understand how a specific modality should be organized. Each example passes the BIDS validator.
+11. **Study bids-examples** - The [bids-examples](https://github.com/bids-standard/bids-examples) repository is the canonical collection of prototypical BIDS datasets covering different modalities and use cases (MRI, fMRI, DWI, EEG, MEG, iEEG, PET, ASL, genetics, derivatives, and more). Use it as a reference when structuring your own dataset, as test data for BIDS utilities, or to understand how a specific modality should be organized. Each example passes the BIDS validator.
 
 ## BIDS Extension Proposals (BEPs)
 
@@ -725,9 +725,9 @@ BEPs are community-driven proposals to extend BIDS to new modalities, derivative
 - **BIDS-Stats Models**: JSON specification for defining GLM-based neuroimaging analyses
 - **BIDS-Derivatives** (BEP003): Standard for preprocessed/analysis outputs (partially merged into spec)
 
-## Related Tools Ecosystem
+## Related Utilities Ecosystem
 
-| Tool | Purpose |
+| Utility | Purpose |
 |------|---------|
 | **fMRIPrep** | fMRI preprocessing (produces BIDS derivatives) |
 | **MRIQC** | MRI quality control (produces BIDS derivatives) |

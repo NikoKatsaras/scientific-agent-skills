@@ -1,6 +1,6 @@
 ---
 name: deeptools
-description: NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.
+description: Use when this skill applies. NGS analysis toolkit. BAM to bigWig conversion, QC (correlation, PCA, fingerprints), heatmaps/profiles (TSS, peaks), for ChIP-seq, RNA-seq, ATAC-seq visualization.
 license: BSD license
 metadata:
   version: "1.0"
@@ -11,7 +11,7 @@ metadata:
 
 ## Overview
 
-deepTools is a comprehensive suite of Python command-line tools designed for processing and analyzing high-throughput sequencing data. Use deepTools to perform quality control, normalize data, compare samples, and generate publication-quality visualizations for ChIP-seq, RNA-seq, ATAC-seq, MNase-seq, and other NGS experiments.
+deepTools is a comprehensive suite of Python command-line utilities designed for processing and analyzing high-throughput sequencing data. Use deepTools to perform quality control, normalize data, compare samples, and generate publication-quality visualizations for ChIP-seq, RNA-seq, ATAC-seq, MNase-seq, and other NGS experiments.
 
 **Core capabilities:**
 - Convert BAM alignments to normalized coverage tracks (bigWig/bedGraph)
@@ -22,7 +22,7 @@ deepTools is a comprehensive suite of Python command-line tools designed for pro
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 
 - **File conversion**: "Convert BAM to bigWig", "generate coverage tracks", "normalize ChIP-seq data"
 - **Quality control**: "check ChIP quality", "compare replicates", "assess sequencing depth", "QC analysis"
@@ -137,7 +137,7 @@ Template: `scripts/workflow_generator.py atacseq`
 
 Full workflow in `references/workflows.md` → "ATAC-seq Workflow"
 
-## Tool Categories and Common Tasks
+## Utility Categories and Common Tasks
 
 ### BAM/bigWig Processing
 
@@ -154,9 +154,9 @@ bamCompare -b1 treatment.bam -b2 control.bam -o ratio.bw \
     --operation log2 --scaleFactorsMethod readCount
 ```
 
-**Key tools:** bamCoverage, bamCompare, multiBamSummary, multiBigwigSummary, correctGCBias, alignmentSieve
+**Key utilities:** bamCoverage, bamCompare, multiBamSummary, multiBigwigSummary, correctGCBias, alignmentSieve
 
-Complete reference: `references/tools_reference.md` → "BAM and bigWig File Processing Tools"
+Complete reference: `references/tools_reference.md` → "BAM and bigWig File Processing Utilities"
 
 ### Quality Control
 
@@ -173,9 +173,9 @@ plotCorrelation -in counts.npz --corMethod pearson \
     --whatToShow heatmap -o correlation.png
 ```
 
-**Key tools:** plotFingerprint, plotCoverage, plotCorrelation, plotPCA, bamPEFragmentSize
+**Key utilities:** plotFingerprint, plotCoverage, plotCorrelation, plotPCA, bamPEFragmentSize
 
-Complete reference: `references/tools_reference.md` → "Quality Control Tools"
+Complete reference: `references/tools_reference.md` → "Quality Control Utilities"
 
 ### Visualization
 
@@ -196,9 +196,9 @@ plotProfile -m matrix.gz -o profile.png \
     --plotType lines --colors blue red
 ```
 
-**Key tools:** computeMatrix, plotHeatmap, plotProfile, plotEnrichment
+**Key utilities:** computeMatrix, plotHeatmap, plotProfile, plotEnrichment
 
-Complete reference: `references/tools_reference.md` → "Visualization Tools"
+Complete reference: `references/tools_reference.md` → "Visualization Utilities"
 
 ## Normalization Methods
 
@@ -235,7 +235,7 @@ RPGC normalization requires effective genome size. Common values:
 
 Complete table with read-length-specific values: `references/effective_genome_sizes.md`
 
-## Common Parameters Across Tools
+## Common Parameters Across Utilities
 
 Many deepTools commands share these options:
 
@@ -333,18 +333,18 @@ This skill includes comprehensive reference documentation:
 
 ### references/tools_reference.md
 Complete documentation of all deepTools commands organized by category:
-- BAM and bigWig processing tools (9 tools)
-- Quality control tools (6 tools)
-- Visualization tools (3 tools)
-- Miscellaneous tools (2 tools)
+- BAM and bigWig processing utilities (9 utilities)
+- Quality control utilities (6 utilities)
+- Visualization utilities (3 utilities)
+- Miscellaneous utilities (2 utilities)
 
-Each tool includes:
+Each utility includes:
 - Purpose and overview
 - Key parameters with explanations
 - Usage examples
 - Important notes and best practices
 
-**Use this reference when:** Users ask about specific tools, parameters, or detailed usage.
+**Use this reference when:** Users ask about specific utilities, parameters, or detailed usage.
 
 ### references/workflows.md
 Complete workflow examples for common analyses:
@@ -440,7 +440,7 @@ Quick reference card with most common commands, effective genome sizes, and typi
 
 ### For Experienced Users
 
-1. Provide specific tool commands for requested operations
+1. Provide specific utility commands for requested operations
 2. Reference appropriate sections in `references/tools_reference.md`
 3. Suggest optimizations and best practices
 4. Offer troubleshooting for issues
@@ -471,14 +471,14 @@ Quick reference card with most common commands, effective genome sizes, and typi
 ### Referencing Documentation
 
 When users need detailed information:
-- **Tool details**: Direct to specific sections in `references/tools_reference.md`
+- **Utility details**: Direct to specific sections in `references/tools_reference.md`
 - **Workflows**: Use `references/workflows.md` for complete analysis pipelines
 - **Normalization**: Consult `references/normalization_methods.md` for method selection
 - **Genome sizes**: Reference `references/effective_genome_sizes.md`
 
 Search references using grep patterns:
 ```bash
-# Find tool documentation
+# Find utility documentation
 grep -A 20 "^### toolname" references/tools_reference.md
 
 # Find workflow

@@ -18,7 +18,7 @@ You have access to 10 academic paper databases through their REST APIs. Your job
 
 3. **Read the reference file** -- Each database has a reference file in `references/` with endpoint details, query formats, and example calls. Read the relevant file(s) before making API calls.
 
-4. **Make the API call(s)** -- See the **Making API Calls** section below for which HTTP fetch tool to use on your platform.
+4. **Make the API call(s)** -- See the **Making API Calls** section below for which HTTP fetch utility to use on your platform.
 
 5. **Return results** -- Always return:
    - The **raw JSON** (or parsed XML for arXiv) response from each database
@@ -109,18 +109,18 @@ Most of these databases are fully open. A few benefit from API keys for higher r
 
 ## Making API Calls
 
-Use your environment's HTTP fetch tool to call REST endpoints:
+Use your environment's HTTP fetch utility to call REST endpoints:
 
-| Platform | HTTP Fetch Tool | Fallback |
+| Platform | HTTP Fetch Utility | Fallback |
 |---|---|---|
 | Claude Code | `WebFetch` | `curl` via Bash |
 | Gemini CLI | `web_fetch` | `curl` via shell |
 | Windsurf | `read_url_content` | `curl` via terminal |
-| Cursor | No dedicated fetch tool | `curl` via `run_terminal_cmd` |
-| Codex CLI | No dedicated fetch tool | `curl` via `shell` |
-| Cline | No dedicated fetch tool | `curl` via `execute_command` |
+| Cursor | No dedicated fetch utility | `curl` via `run_terminal_cmd` |
+| Codex CLI | No dedicated fetch utility | `curl` via `shell` |
+| Cline | No dedicated fetch utility | `curl` via `execute_command` |
 
-If the fetch tool fails, fall back to `curl` via whatever shell tool is available.
+If the fetch utility fails, fall back to `curl` via whatever shell utility is available.
 
 ### Special cases
 

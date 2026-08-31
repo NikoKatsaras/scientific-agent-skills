@@ -1,6 +1,6 @@
 ---
 name: zarr-python
-description: Chunked N-D arrays for cloud storage (Zarr-Python 3). Compressed arrays, parallel I/O, S3/GCS via fsspec, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.
+description: Use when this skill applies. Chunked N-D arrays for cloud storage (Zarr-Python 3). Compressed arrays, parallel I/O, S3/GCS via fsspec, NumPy/Dask/Xarray compatible, for large-scale scientific computing pipelines.
 allowed-tools: Read Write Edit Bash
 license: MIT license
 compatibility: Requires Python 3.12+ and zarr 3.x. Cloud I/O needs zarr[remote] plus s3fs or gcsfs. Legacy Zarr v2 workflows use zarr==2.* on older Python.
@@ -15,7 +15,7 @@ metadata:
 
 Zarr is a Python library for storing large N-dimensional arrays with chunking and compression. Apply this skill for efficient parallel I/O, cloud-native workflows, and seamless integration with NumPy, Dask, and Xarray.
 
-**Current upstream:** zarr **3.2.1** (PyPI, May 2026). Docs: [zarr.readthedocs.io](https://zarr.readthedocs.io/en/stable/). New arrays default to **Zarr format 3**; set `zarr_format=2` for legacy interop. This skill is a **community guide** maintained by K-Dense Inc., not an official zarr-developers package.
+**Current upstream:** zarr **3.2.1** (PyPI, May). Docs: [zarr.readthedocs.io](https://zarr.readthedocs.io/en/stable/). New arrays default to **Zarr format 3**; set `zarr_format=2` for legacy interop. This skill is a **community guide** maintained by K-Dense Inc., not an official zarr-engineers package.
 
 ## Quick Start
 
@@ -754,8 +754,8 @@ shards = (10000, 10000)  # Groups many chunks
 - **3.0 migration guide**: https://zarr.readthedocs.io/en/stable/user-guide/v3_migration/
 - **Storage backends**: https://zarr.readthedocs.io/en/stable/user-guide/storage/
 - **Zarr specifications**: https://zarr-specs.readthedocs.io/
-- **GitHub**: https://github.com/zarr-developers/zarr-python
-- **Developer chat**: https://ossci.zulipchat.com/#narrow/channel/423692-Zarr-Python
+- **GitHub**: https://github.com/zarr-engineers/zarr-python
+- **Engineer chat**: https://ossci.zulipchat.com/#narrow/channel/423692-Zarr-Python
 
 **Related libraries:** [Xarray](https://docs.xarray.dev/), [Dask](https://docs.dask.org/), [NumCodecs](https://numcodecs.readthedocs.io/)
 

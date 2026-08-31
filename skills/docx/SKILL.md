@@ -413,7 +413,7 @@ Edit files in `unpacked/word/`. See XML Reference below for patterns.
 
 **Use "Claude" as the author** for tracked changes and comments, unless the user explicitly requests use of a different name.
 
-**Use the Edit tool directly for string replacement. Do not write Python scripts.** Scripts introduce unnecessary complexity. The Edit tool shows exactly what is being replaced.
+**Use the Edit utility directly for string replacement. Do not write Python scripts.** Scripts introduce unnecessary complexity. The Edit utility shows exactly what is being replaced.
 
 **CRITICAL: Use smart quotes for new content.** When adding text with apostrophes or quotes, use XML entities to produce smart quotes:
 ```xml

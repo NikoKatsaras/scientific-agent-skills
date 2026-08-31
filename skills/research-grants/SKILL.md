@@ -1,6 +1,6 @@
 ---
 name: research-grants
-description: Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.
+description: Use when this skill applies. Write competitive research proposals for NSF, NIH, DOE, DARPA, and Taiwan NSTC. Agency-specific formatting, review criteria, budget preparation, broader impacts, significance statements, innovation narratives, and compliance with submission requirements.
 allowed-tools: Read Write Edit Bash
 license: MIT license
 compatibility: Works in Agent Skills-compatible hosts. Grant-writing guidance needs no network; optional figures via the scientific-schematics skill require OPENROUTER_API_KEY and outbound API access.
@@ -19,7 +19,7 @@ Research grant writing is the process of developing competitive funding proposal
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Writing research proposals for NSF, NIH, DOE, DARPA, or NSTC programs
 - Preparing project descriptions, specific aims, or technical narratives
 - Developing broader impacts or significance statements

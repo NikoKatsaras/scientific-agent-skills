@@ -20,7 +20,7 @@ Dask is a Python library for parallel and distributed computing that enables thr
 
 Dask scales from laptops (processing ~100 GiB) to clusters (processing ~100 TiB) while maintaining familiar Python APIs.
 
-**Current upstream:** dask **2026.3.0** (PyPI, March 2026). Docs: [docs.dask.org](https://docs.dask.org/en/stable/). Since **2025.1.0**, the expression-based DataFrame API with query planning is the only implementation — do not install `dask-expr` separately or set `dataframe.query-planning: False`.
+**Current upstream:** dask **2026.3.0** (PyPI, March). Docs: [docs.dask.org](https://docs.dask.org/en/stable/). Since **2025.1.0**, the expression-based DataFrame API with query planning is the only implementation — do not install `dask-expr` separately or set `dataframe.query-planning: False`.
 
 ## Quick Start
 
@@ -43,11 +43,11 @@ uv pip install s3fs    # s3:// paths
 uv pip install gcsfs   # gs:// paths
 ```
 
-Requires **Python 3.10+** (3.9 support dropped in 2024.12). DataFrame I/O requires **PyArrow 16+** (as of dask 2026.1.2).
+Requires **Python 3.10+** (3.9 support dropped in recent years.12). DataFrame I/O requires **PyArrow 16+** (as of dask 2026.1.2).
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Process datasets that exceed available RAM
 - Scale pandas or NumPy operations to larger datasets
 - Parallelize computations for performance improvements

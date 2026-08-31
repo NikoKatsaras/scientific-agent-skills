@@ -1,6 +1,6 @@
 ---
 name: nextflow
-description: Build, run, and debug Nextflow data pipelines and nf-core workflows end to end. Use whenever the user mentions Nextflow, nf-core, .nf files, nextflow.config, DSL2, processes/channels/operators, samplesheets, or wants to run a community pipeline (e.g. nf-core/rnaseq, nf-core/sarek), write or test a module/subworkflow with nf-test, configure executors/containers (Docker, Singularity/Apptainer, Conda, Wave), scale a workflow to HPC/SLURM or cloud (AWS Batch, Google Batch, Azure, Kubernetes), or debug a failed/-resume run. Make sure to use this skill for any reproducible scientific/bioinformatics workflow work even if the user does not say the word "Nextflow", and for authoring nf-core-compliant pipelines, modules, configs, and linting.
+description: Build, run, and debug Nextflow data pipelines and nf-core workflows end to end. Use when the user mentions Nextflow, nf-core, .nf files, nextflow.config, DSL2, processes/channels/operators, samplesheets, or wants to run a community pipeline (e.g. nf-core/rnaseq, nf-core/sarek), write or test a module/subworkflow with nf-test, configure executors/containers (Docker, Singularity/Apptainer, Conda, Wave), scale a workflow to HPC/SLURM or cloud (AWS Batch, Google Batch, Azure, Kubernetes), or debug a failed/-resume run. Make sure to use this skill for any reproducible scientific/bioinformatics workflow work even if the user does not say the word "Nextflow", and for authoring nf-core-compliant pipelines, modules, configs, and linting.
 license: Apache-2.0
 metadata:
   version: "1.0"
@@ -23,7 +23,7 @@ This skill covers both **running** existing pipelines and **developing** your ow
 
 ## When to Use This Skill
 
-Use this skill when the user wants to:
+Use when the user wants to:
 - Run an nf-core or custom Nextflow pipeline, or debug a failing/resuming run.
 - Write or modify `.nf` scripts, `nextflow.config`, profiles, or `nextflow_schema.json`.
 - Author or test nf-core-style modules/subworkflows (`main.nf`, `meta.yml`, `tests/`, nf-test).
@@ -46,7 +46,7 @@ conda create -n nf -c bioconda -c conda-forge nextflow nf-core
 ```
 
 ```bash
-# nf-core tools (Python) for creating/linting/running nf-core assets
+# nf-core utilities (Python) for creating/linting/running nf-core assets
 pip install nf-core            # or: conda install -c bioconda nf-core
 nf-core --version
 ```
@@ -131,9 +131,9 @@ The full language (processes, channels, operators, DSL2 workflows with `take`/`m
 - **Configuration**: `nextflow.config` sets `params`, `process` directives, `executor`, container engines, and named `profiles`. Selectors `withName:`/`withLabel:` target specific processes. See `references/configuration.md`.
 - **meta map** (nf-core): the convention of carrying a metadata map (`[ id:'sample1', single_end:false ]`) alongside files in input/output tuples so samples stay labeled through the pipeline. See `references/developing.md`.
 
-## nf-core tools CLI
+## nf-core utilities CLI
 
-nf-core tools (v3+) group subcommands under `pipelines`, `modules`, and `subworkflows`. (Bare forms like `nf-core lint` still work but warn — prefer the grouped form.)
+nf-core utilities (v3+) group subcommands under `pipelines`, `modules`, and `subworkflows`. (Bare forms like `nf-core lint` still work but warn — prefer the grouped form.)
 
 | Command | Purpose |
 |---------|---------|
@@ -147,10 +147,10 @@ nf-core tools (v3+) group subcommands under `pipelines`, `modules`, and `subwork
 | `nf-core pipelines bump-version` / `sync` | Bump version / sync with template updates |
 | `nf-core modules list/info/install/update/remove` | Manage modules from nf-core/modules |
 | `nf-core modules create` / `lint` / `test` | Author, lint, and nf-test a module |
-| `nf-core modules patch` / `bump-versions` | Patch an installed module / bump tool versions |
+| `nf-core modules patch` / `bump-versions` | Patch an installed module / bump utility versions |
 | `nf-core subworkflows install/create/lint/test` | Same lifecycle for subworkflows |
 
-Full command reference, flags, and examples: `references/nf-core-tools.md`.
+Full command reference, flags, and examples: `references/nf-core-utilities.md`.
 
 ## Essential `nextflow` CLI
 
@@ -172,11 +172,11 @@ Config, executors, caching internals, and tracing details: `references/configura
 ## Best Practices (high-value habits)
 
 - **Always `test` first**: `-profile test,docker` (or `singularity`/`conda`) before real data — fast and catches environment problems.
-- **Pin everything**: pipeline revision (`-r`), `NXF_VER`, and tool versions (containers). Don't run `latest` for science you'll publish.
+- **Pin everything**: pipeline revision (`-r`), `NXF_VER`, and utility versions (containers). Don't run `latest` for science you'll publish.
 - **Use `-resume`** and understand caching: a task re-runs if its inputs, script, or container change. See cache-debugging in `references/configuration.md`.
 - **Parameterize via config/params-file**, not hardcoded paths. Keep `params` and profiles in `nextflow.config`.
-- **One container/conda env per process**; never rely on tools installed on the host.
-- **For nf-core dev**: reuse existing modules (`nf-core modules install`) before writing new ones; pass tool flags through `ext.args` (not hardcoded in the script); always include a `stub:` block and nf-test tests; run `nf-core pipelines lint` and `prettier` before committing.
+- **One container/conda env per process**; never rely on utilities installed on the host.
+- **For nf-core dev**: reuse existing modules (`nf-core modules install`) before writing new ones; pass utility flags through `ext.args` (not hardcoded in the script); always include a `stub:` block and nf-test tests; run `nf-core pipelines lint` and `prettier` before committing.
 - **Right-size resources** with `process_low/medium/high` labels and `errorStrategy 'retry'` with dynamic `task.attempt` scaling instead of one giant request.
 - **Write forward-compatible syntax**: the strict-syntax parser becomes the default in Nextflow 26.04. Prefer lowercase `channel.of(...)`, explicit closure params (`{ v -> ... }`), `def` for all variables, and `emit:`-named outputs. Check with `nextflow lint`.
 
@@ -188,7 +188,7 @@ Read the relevant file when you need depth — each is self-contained:
 - `references/configuration.md` — `nextflow.config`, scopes, `profiles`, `withName`/`withLabel` selectors, executors (local/SLURM/cloud), caching/`-resume` internals, tracing/reports, the `nextflow` CLI.
 - `references/containers.md` — Docker, Singularity/Apptainer, Podman, Conda, Wave containers; choosing and enabling engines; common gotchas.
 - `references/running-pipelines.md` — finding/running nf-core pipelines, samplesheets, params files, reference genomes (iGenomes), offline runs, institutional configs, Seqera Platform.
-- `references/nf-core-tools.md` — complete `nf-core` CLI reference (pipelines/modules/subworkflows), flags, and workflows.
+- `references/nf-core-utilities.md` — complete `nf-core` CLI reference (pipelines/modules/subworkflows), flags, and workflows.
 - `references/developing.md` — authoring nf-core pipelines & modules: template layout, module `main.nf`/`meta.yml`, meta maps, `ext.args`/`modules.config`, subworkflows, resource labels, linting & Harshil alignment style.
 - `references/testing.md` — nf-test for modules/subworkflows/pipelines: test structure, assertions, snapshots, tags, running tests, CI.
 

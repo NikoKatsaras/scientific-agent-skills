@@ -1,6 +1,6 @@
 ---
 name: scholar-evaluation
-description: Systematically evaluate scholarly work using the ScholarEval framework, providing structured assessment across research quality dimensions including problem formulation, methodology, analysis, and writing with quantitative scoring and actionable feedback.
+description: Use when this skill applies. Systematically evaluate scholarly work using the ScholarEval framework, providing structured assessment across research quality dimensions including problem formulation, methodology, analysis, and writing with quantitative scoring and actionable feedback.
 license: MIT license
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ Apply the ScholarEval framework to systematically evaluate scholarly and researc
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Evaluating research papers for quality and rigor
 - Assessing literature review comprehensiveness and quality
 - Reviewing research methodology design

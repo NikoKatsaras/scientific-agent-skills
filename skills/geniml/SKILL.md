@@ -1,6 +1,6 @@
 ---
 name: geniml
-description: This skill should be used when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.
+description: Use when working with genomic interval data (BED files) for machine learning tasks. Use for training region embeddings (Region2Vec, BEDspace), single-cell ATAC-seq analysis (scEmbed), building consensus peaks (universes), or any ML-based analysis of genomic regions. Applies to BED file collections, scATAC-seq data, chromatin accessibility datasets, and region-based genomic feature learning.
 license: BSD-2-Clause license
 metadata:
   version: "1.0"
@@ -98,9 +98,9 @@ Build reference peak sets (universes) from BED file collections using multiple s
 
 **Reference:** See `references/consensus_peaks.md` for method comparison, parameters, and examples.
 
-### 5. Utilities: Supporting Tools
+### 5. Utilities: Supporting Utilities
 
-Additional tools for caching, randomization, evaluation, and search.
+Additional utilities for caching, randomization, evaluation, and search.
 
 **Available utilities:**
 - **BBClient**: BED file caching for repeated access
@@ -220,7 +220,7 @@ geniml universe build cc --coverage-folder coverage/ --output universe.bed --cut
 geniml bedshift --input peaks.bed --genome hg38 --preserve-chrom --iterations 100
 ```
 
-## When to Use Which Tool
+## When to Use Which Utility
 
 **Use Region2Vec when:**
 - Working with bulk genomic data (ChIP-seq, ATAC-seq, etc.)
@@ -282,7 +282,7 @@ Geniml is part of the BEDbase ecosystem:
 
 - **BEDbase**: Unified platform for genomic regions
 - **BEDboss**: Processing pipeline for BED files
-- **Gtars**: Genomic tools and utilities
+- **Gtars**: Genomic utilities and utilities
 - **BBClient**: Client for BEDbase repositories
 
 ## Additional Resources

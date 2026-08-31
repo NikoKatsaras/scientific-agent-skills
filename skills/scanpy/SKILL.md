@@ -11,7 +11,7 @@ metadata:
 
 ## Overview
 
-Scanpy is a scalable Python toolkit for analyzing single-cell RNA-seq data, built on AnnData. Apply this skill for complete single-cell workflows including quality control, normalization, dimensionality reduction, clustering, marker gene identification, visualization, and trajectory analysis. Current stable release: **scanpy 1.12.x** (January 2026).
+Scanpy is a scalable Python toolkit for analyzing single-cell RNA-seq data, built on AnnData. Apply this skill for complete single-cell workflows including quality control, normalization, dimensionality reduction, clustering, marker gene identification, visualization, and trajectory analysis. Current stable release: **scanpy 1.12.x** (January).
 
 ## Installation
 
@@ -35,7 +35,7 @@ For AnnData structure and I/O details, use the **anndata** skill. For probabilis
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Analyzing single-cell RNA-seq data (.h5ad, 10X, CSV formats)
 - Performing quality control on scRNA-seq datasets
 - Creating UMAP, t-SNE, or PCA visualizations

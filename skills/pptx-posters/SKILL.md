@@ -1,6 +1,6 @@
 ---
 name: pptx-posters
-description: Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.
+description: Use when this skill applies. Create research posters using HTML/CSS that can be exported to PDF or PPTX. Use this skill ONLY when the user explicitly requests PowerPoint/PPTX poster format. For standard research posters, use latex-posters instead. This skill provides modern web-based poster design with responsive layouts and easy visual integration.
 allowed-tools: Read Write Edit Bash
 license: MIT license
 metadata:
@@ -25,13 +25,13 @@ This skill creates research posters using HTML/CSS, which can then be exported t
 
 ## When to Use This Skill
 
-**ONLY use this skill when:**
+**ONLY Use when:**
 - User explicitly requests "PPTX poster", "PowerPoint poster", or "PPT poster"
 - User specifically asks for HTML-based poster
 - User needs to edit poster in PowerPoint after creation
 - LaTeX is not available or user requests non-LaTeX solution
 
-**DO NOT use this skill when:**
+**DO NOT Use when:**
 - User asks for a "poster" without specifying format → Use latex-posters
 - User asks for "research poster" or "conference poster" → Use latex-posters
 - User mentions LaTeX, tikzposter, beamerposter, or baposter → Use latex-posters

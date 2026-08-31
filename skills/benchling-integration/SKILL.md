@@ -19,7 +19,7 @@ Benchling is a cloud platform for life sciences R&D. Access registry entities (D
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Working with Benchling's Python SDK or REST API
 - Managing biological sequences (DNA, RNA, proteins) and registry entities
 - Automating inventory operations (samples, containers, locations, transfers)
@@ -59,7 +59,7 @@ if not tenant_url or not api_key:
     raise ValueError("Set BENCHLING_TENANT_URL and BENCHLING_API_KEY")
 ```
 
-Obtain an API key from **Profile Settings** in Benchling. For OAuth apps, use the [Developer Console](https://docs.benchling.com/docs/getting-started-benchling-apps) and store `BENCHLING_CLIENT_ID` / `BENCHLING_CLIENT_SECRET` separately.
+Obtain an API key from **Profile Settings** in Benchling. For OAuth apps, use the [Engineer Console](https://docs.benchling.com/docs/getting-started-benchling-apps) and store `BENCHLING_CLIENT_ID` / `BENCHLING_CLIENT_SECRET` separately.
 
 **Authentication methods:**
 
@@ -435,7 +435,7 @@ The SDK handles unknown enum values and types gracefully:
 - Read only named environment variables (`BENCHLING_TENANT_URL`, `BENCHLING_API_KEY`, etc.)
 - Route network calls exclusively to your tenant URL
 - Rotate keys if compromised; use OAuth for multi-user production apps
-- Grant minimal necessary permissions for apps in the Developer Console
+- Grant minimal necessary permissions for apps in the Engineer Console
 
 ## Resources
 

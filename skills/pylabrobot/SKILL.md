@@ -15,7 +15,7 @@ PyLabRobot is a hardware-agnostic, pure Python Software Development Kit for auto
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Programming liquid handling robots (Hamilton STAR/STARlet, Opentrons OT-2, Tecan EVO)
 - Automating laboratory workflows involving pipetting, sample preparation, or analytical measurements
 - Managing deck layouts and laboratory resources (plates, tips, containers, troughs)
@@ -79,7 +79,7 @@ Visualize and simulate laboratory protocols:
 - **Browser Visualizer**: Real-time 3D visualization of deck state
 - **Simulation Mode**: Test protocols without physical hardware
 - **State Tracking**: Monitor tip presence and liquid volumes visually
-- **Deck Editor**: Graphical tool for designing deck layouts
+- **Deck Editor**: Graphical utility for designing deck layouts
 - **Protocol Validation**: Verify protocols before running on hardware
 
 ## Quick Start

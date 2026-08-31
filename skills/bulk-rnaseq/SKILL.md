@@ -1,6 +1,6 @@
 ---
 name: bulk-rnaseq
-description: End-to-end bulk RNA-seq orchestrator — takes raw FASTQ reads through QC and trimming (FastQC, fastp/Trim Galore), alignment and quantification (STAR, Salmon, featureCounts), assembles a gene-level counts matrix, then hands off to differential expression (pydeseq2), pathway/GSEA enrichment (pathway-enrichment), and publication figures (scientific-visualization). Use whenever the user has bulk RNA-seq reads or quant output and wants a complete, reproducible differential-expression workflow — e.g. "analyze my RNA-seq", "FASTQ to DESeq2", "run nf-core/rnaseq", "STAR/Salmon quantification", "build a counts matrix for DESeq2", or "go from reads to differentially expressed genes and enriched pathways". Routes between an nf-core/rnaseq (Nextflow) path and a standalone STAR/Salmon path, and covers experimental design, strandedness, and QC gates. For single-cell RNA-seq use the scanpy skill instead.
+description: End-to-end bulk RNA-seq orchestrator — takes raw FASTQ reads through QC and trimming (FastQC, fastp/Trim Galore), alignment and quantification (STAR, Salmon, featureCounts), assembles a gene-level counts matrix, then hands off to differential expression (pydeseq2), pathway/GSEA enrichment (pathway-enrichment), and publication figures (scientific-visualization). Use when the user has bulk RNA-seq reads or quant output and wants a complete, reproducible differential-expression workflow — e.g. "analyze my RNA-seq", "FASTQ to DESeq2", "run nf-core/rnaseq", "STAR/Salmon quantification", "build a counts matrix for DESeq2", or "go from reads to differentially expressed genes and enriched pathways". Routes between an nf-core/rnaseq (Nextflow) path and a standalone STAR/Salmon path, and covers experimental design, strandedness, and QC gates. For single-cell RNA-seq use the scanpy skill instead.
 license: MIT
 metadata:
   version: "1.0"
@@ -14,7 +14,7 @@ metadata:
 This skill orchestrates a complete, **defensible** bulk RNA-seq differential-expression study, from raw sequencing reads to enriched pathways and figures. It is a router, not a reimplementation: most stages already have dedicated skills in this repo, and this skill connects them in the right order, fills the one real gap (raw reads → a gene-level counts matrix), and enforces the design and QC decisions that determine whether the final result is trustworthy.
 
 "Defensible" means three things, applied throughout:
-- **Reproducible** — pinned pipeline/tool versions, containers where possible, recorded parameters, fixed random seeds.
+- **Reproducible** — pinned pipeline/utility versions, containers where possible, recorded parameters, fixed random seeds.
 - **Quality-gated** — QC is inspected and acted on before, during, and after quantification, not skipped.
 - **Statistically sound** — adequate replication, a design that matches the biology, counts handled correctly, and FDR-controlled testing.
 
@@ -22,12 +22,12 @@ The pipeline is: **FastQC/trim → align/quant (STAR/Salmon) → counts → DE (
 
 ## When to Use This Skill
 
-Use this skill when the user wants to:
+Use when the user wants to:
 - Go from FASTQ files (or a sequencing run) to differentially expressed genes and pathways.
 - Run or configure `nf-core/rnaseq`, or align/quantify with STAR, Salmon, or featureCounts.
 - Turn Salmon/STAR/featureCounts output into a counts matrix ready for DESeq2/PyDESeq2.
 - Design or sanity-check a bulk RNA-seq experiment (replicates, batch, strandedness) before committing compute.
-- Scope an end-to-end RNA-seq analysis and decide which tools and skills to chain.
+- Scope an end-to-end RNA-seq analysis and decide which utilities and skills to chain.
 
 This is **bulk** RNA-seq (samples = biological specimens). For single-cell/nuclei data use `scanpy`; for the DE statistics alone use `pydeseq2`; for enrichment alone use `pathway-enrichment`.
 
@@ -55,7 +55,7 @@ flowchart TD
 
 The reads → counts stage can be run two ways. They produce equivalent gene counts; choose by context, then stay on that path.
 
-| Use **Path A — `nf-core/rnaseq`** when… | Use **Path B — standalone tools** when… |
+| Use **Path A — `nf-core/rnaseq`** when… | Use **Path B — standalone utilities** when… |
 |------------------------------------------|------------------------------------------|
 | You want the field-standard, audited, citable pipeline with one command | You have a few samples and want to learn/inspect each step |
 | Many samples, or you'll scale to HPC/cloud | No Nextflow/containers available, or a constrained environment |
@@ -78,12 +78,12 @@ uv pip install pytximport pandas
 
 # Path A (nf-core): only Nextflow + a container engine are needed — see the `nextflow` skill.
 
-# Path B (standalone tools): install via bioconda. Pin versions for reproducibility.
+# Path B (standalone utilities): install via bioconda. Pin versions for reproducibility.
 conda create -n rnaseq -c bioconda -c conda-forge \
   fastqc fastp trim-galore "star=2.7.11b" "salmon=1.10.3" subread multiqc
 ```
 
-Record the exact versions you use (pipeline revision, tool versions, reference genome + annotation release) — they belong in the methods section and make the analysis reproducible.
+Record the exact versions you use (pipeline revision, utility versions, reference genome + annotation release) — they belong in the methods section and make the analysis reproducible.
 
 ## Quick Start
 
@@ -169,8 +169,8 @@ These cause most wrong or irreproducible bulk RNA-seq results:
 5. **Non-integer counts.** PyDESeq2 requires integers; round Salmon estimates (the bridge does this).
 6. **Gene-ID mismatch into enrichment.** DESeq2 output is often Ensembl IDs; Enrichr/MSigDB want symbols. Map IDs before `pathway-enrichment` or "nothing is significant".
 7. **Skipping post-quant QC.** Always look at the PCA and sample-distance heatmap before trusting DE — they expose swapped labels, outliers, and hidden batches.
-8. **Mixing aligners across samples.** Quantify every sample with the same tool, version, reference, and parameters.
-9. **Unpinned versions.** "latest" pipelines/genomes make results unreproducible; pin `-r`, tool versions, and the genome/annotation release.
+8. **Mixing aligners across samples.** Quantify every sample with the same utility, version, reference, and parameters.
+9. **Unpinned versions.** "latest" pipelines/genomes make results unreproducible; pin `-r`, utility versions, and the genome/annotation release.
 
 ## Integration with Other Skills
 

@@ -1,6 +1,6 @@
 ---
 name: protocolsio-integration
-description: Integration with protocols.io API for managing scientific protocols. This skill should be used when working with protocols.io to search, create, update, or publish protocols; manage protocol steps and materials; handle discussions and comments; organize workspaces; upload and manage files; or integrate protocols.io functionality into workflows. Applicable for protocol discovery, collaborative protocol development, experiment tracking, lab protocol management, and scientific documentation.
+description: Integration with protocols.io API for managing scientific protocols. Use when working with protocols.io to search, create, update, or publish protocols; manage protocol steps and materials; handle discussions and comments; organize workspaces; upload and manage files; or integrate protocols.io functionality into workflows. Applicable for protocol discovery, collaborative protocol development, experiment tracking, lab protocol management, and scientific documentation.
 license: Unknown
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ Protocols.io is a comprehensive platform for developing, sharing, and managing s
 
 ## When to Use This Skill
 
-Use this skill when working with protocols.io in any of the following scenarios:
+Use when working with protocols.io in any of the following scenarios:
 
 - **Protocol Discovery**: Searching for existing protocols by keywords, DOI, or category
 - **Protocol Management**: Creating, updating, or publishing scientific protocols

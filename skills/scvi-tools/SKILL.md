@@ -11,13 +11,13 @@ metadata:
 
 ## Overview
 
-scvi-tools is a comprehensive Python framework for probabilistic models in single-cell genomics. Built on PyTorch and PyTorch Lightning, it provides deep generative models using variational inference for analyzing diverse single-cell data modalities. Current stable release: **scvi-tools 1.4.3** (May 2026).
+scvi-tools is a comprehensive Python framework for probabilistic models in single-cell genomics. Built on PyTorch and PyTorch Lightning, it provides deep generative models using variational inference for analyzing diverse single-cell data modalities. Current stable release: **scvi-tools 1.4.3** (May).
 
 **Model namespaces matter:** core models (scVI, scANVI, totalVI, MultiVI, PeakVI, AUTOZI, CondSCVI, DestVI, LinearSCVI, AmortizedLDA, JaxSCVI) live under `scvi.model`. Most other models (VeloVI, contrastiveVI, CellAssign, PoissonVI, scBasset, MrVI, MethylVI/MethylANVI, CytoVI, SysVI, Decipher, gimVI, scVIVA, ResolVI, Stereoscope, Solo, totalANVI, DIAGVI) live under `scvi.external`. The reference files specify the correct namespace per model.
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Analyzing single-cell RNA-seq data (dimensionality reduction, batch correction, integration)
 - Working with single-cell ATAC-seq or chromatin accessibility data
 - Integrating multimodal data (CITE-seq, multiome, paired/unpaired datasets)

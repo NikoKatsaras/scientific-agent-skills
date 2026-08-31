@@ -15,7 +15,7 @@ Scientific brainstorming is a conversational process for generating novel resear
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Generating novel research ideas or directions
 - Exploring interdisciplinary connections and analogies
 - Challenging assumptions in existing research frameworks
@@ -188,3 +188,8 @@ Consult this file when the scientist requests a specific methodology or when the
 - Remember that the best brainstorming often feels playful and exploratory.
 - The goal is not to solve everything, but to open new possibilities.
 
+
+
+```text
+Invocation example: apply this skill on the current task.
+```

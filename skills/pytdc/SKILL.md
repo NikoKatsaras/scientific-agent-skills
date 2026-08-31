@@ -1,6 +1,6 @@
 ---
 name: pytdc
-description: Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecular oracles, for therapeutic ML and pharmacological prediction.
+description: Use when this skill applies. Therapeutics Data Commons. AI-ready drug discovery datasets (ADME, toxicity, DTI), benchmarks, scaffold splits, molecular oracles, for therapeutic ML and pharmacological prediction.
 license: MIT license
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ PyTDC is an open-science platform providing AI-ready datasets and benchmarks for
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Working with drug discovery or therapeutic ML datasets
 - Benchmarking machine learning models on standardized pharmaceutical tasks
 - Predicting molecular properties (ADME, toxicity, bioactivity)

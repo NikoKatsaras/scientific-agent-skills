@@ -1,6 +1,6 @@
 ---
 name: shap
-description: Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use this skill when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analyzing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.
+description: Model interpretability and explainability using SHAP (SHapley Additive exPlanations). Use when explaining machine learning model predictions, computing feature importance, generating SHAP plots (waterfall, beeswarm, bar, scatter, force, heatmap), debugging models, analyzing model bias or fairness, comparing models, or implementing explainable AI. Works with tree-based models (XGBoost, LightGBM, Random Forest), deep learning (TensorFlow, PyTorch), linear models, and any black-box model.
 license: MIT license
 metadata:
   version: "1.0"
@@ -388,7 +388,7 @@ explainer = joblib.load('explainer.pkl')
 **Problem**: Computing SHAP for very large datasets
 **Solution**: Sample subset, use batching, or ensure using specialized explainer (not KernelExplainer)
 
-## Integration with Other Tools
+## Integration with Other Utilities
 
 ### Jupyter Notebooks
 - Interactive force plots work seamlessly
@@ -508,7 +508,7 @@ Includes: Mathematical foundations, proofs, comparisons, advanced topics.
 
 **Loading references**:
 ```python
-# To load reference files, use the Read tool with appropriate file path:
+# To load reference files, use the Read utility with appropriate file path:
 # /path/to/shap/references/explainers.md
 # /path/to/shap/references/plots.md
 # /path/to/shap/references/workflows.md

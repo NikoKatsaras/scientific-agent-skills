@@ -181,7 +181,7 @@ See `config.yaml` for the full shape. Default values (local-first):
 ```yaml
 backend: local
 local:
-  endpoint: http://localhost:1234/v1   # LM Studio's Developer server
+  endpoint: http://localhost:1234/v1   # LM Studio's Engineer server
   model: Gemma-4-31B-it
 
 screenpipe:

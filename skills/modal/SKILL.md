@@ -24,7 +24,7 @@ Everything in Modal is defined as code — no YAML, no Dockerfiles required (tho
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 - Deploy or serve AI/ML models in the cloud
 - Run GPU-accelerated computations (training, inference, fine-tuning)
 - Create serverless web APIs or endpoints
@@ -348,7 +348,7 @@ sb.terminate()
 - Run commands inside the sandbox with its `exec` method (e.g. run `python /tmp/job.py`) and read stdout from the returned process handle — see `references/api_reference.md`
 - Restrict connectivity with `outbound_cidr_allowlist=[...]` / `inbound_cidr_allowlist=[...]`
 - Snapshot the filesystem with `sb.snapshot_filesystem()` to reuse as a base image
-- Ideal for code interpreters, agent tool execution, and per-user isolation
+- Ideal for code interpreters, agent utility execution, and per-user isolation
 
 ## Common Workflow Patterns
 

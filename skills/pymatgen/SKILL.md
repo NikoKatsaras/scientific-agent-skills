@@ -1,6 +1,6 @@
 ---
 name: pymatgen
-description: Materials science toolkit. Crystal structures (CIF, POSCAR), phase diagrams, band structure, DOS, Materials Project integration, format conversion, for computational materials science.
+description: Use when this skill applies. Materials science toolkit. Crystal structures (CIF, POSCAR), phase diagrams, band structure, DOS, Materials Project integration, format conversion, for computational materials science.
 license: MIT license
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ Pymatgen is a comprehensive Python library for materials analysis that powers th
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Working with crystal structures or molecular systems in materials science
 - Converting between structure file formats (CIF, POSCAR, XYZ, etc.)
 - Analyzing symmetry, space groups, or coordination environments

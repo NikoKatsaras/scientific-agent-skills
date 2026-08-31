@@ -1,6 +1,6 @@
 ---
 name: diffdock
-description: Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug design. Not for affinity prediction.
+description: Use when this skill applies. Diffusion-based molecular docking. Predict protein-ligand binding poses from PDB/SMILES, confidence scores, virtual screening, for structure-based drug design. Not for affinity prediction.
 license: MIT license
 metadata:
   version: "1.0"
@@ -11,7 +11,7 @@ metadata:
 
 ## Overview
 
-DiffDock is a diffusion-based deep learning tool for molecular docking that predicts 3D binding poses of small molecule ligands to protein targets. It represents the state-of-the-art in computational docking, crucial for structure-based drug discovery and chemical biology.
+DiffDock is a diffusion-based deep learning utility for molecular docking that predicts 3D binding poses of small molecule ligands to protein targets. It represents the state-of-the-art in computational docking, crucial for structure-based drug discovery and chemical biology.
 
 **Core Capabilities:**
 - Predict ligand binding poses with high accuracy using deep learning
@@ -24,7 +24,7 @@ DiffDock is a diffusion-based deep learning tool for molecular docking that pred
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 
 - "Dock this ligand to a protein" or "predict binding pose"
 - "Run molecular docking" or "perform protein-ligand docking"
@@ -210,7 +210,7 @@ The analysis script:
    - Novel protein families: May underperform
 3. **Multiple Samples**: Review top 3-5 predictions, look for consensus
 
-**For detailed guidance:** Read `references/confidence_and_limitations.md` using the Read tool
+**For detailed guidance:** Read `references/confidence_and_limitations.md` using the Read utility
 
 ## Parameter Customization
 
@@ -251,7 +251,7 @@ python -m inference \
 3. Flexible Ligands: Increased torsion temperature
 4. Rigid Ligands: Decreased torsion temperature
 
-**For complete parameter reference:** Read `references/parameters_reference.md` using the Read tool
+**For complete parameter reference:** Read `references/parameters_reference.md` using the Read utility
 
 ## Advanced Techniques
 
@@ -287,7 +287,7 @@ python -m inference \
 
 ### Integration with Scoring Functions
 
-DiffDock generates poses; combine with other tools for affinity:
+DiffDock generates poses; combine with other utilities for affinity:
 
 **GNINA (Fast neural network scoring):**
 ```bash
@@ -319,11 +319,11 @@ Use OpenMM + OpenFE or GROMACS for FEP/TI calculations
 **DiffDock IS NOT Designed For:**
 - Large biomolecules (protein-protein docking) → Use DiffDock-PP or AlphaFold-Multimer
 - Large peptides (>20 residues) → Use alternative methods
-- Covalent docking → Use specialized covalent docking tools
+- Covalent docking → Use specialized covalent docking utilities
 - Binding affinity prediction → Combine with scoring functions
 - Membrane proteins → Not specifically trained, use with caution
 
-**For complete limitations:** Read `references/confidence_and_limitations.md` using the Read tool
+**For complete limitations:** Read `references/confidence_and_limitations.md` using the Read utility
 
 ## Troubleshooting
 
@@ -405,17 +405,17 @@ Read this file when users need:
 - Fine-tuning guidance for specific systems
 - Alternative sampling strategies
 
-**`confidence_and_limitations.md`**: Confidence score interpretation and tool limitations
+**`confidence_and_limitations.md`**: Confidence score interpretation and utility limitations
 - Detailed confidence score interpretation
 - When to trust predictions
 - Scope and limitations of DiffDock
-- Integration with complementary tools
+- Integration with complementary utilities
 - Troubleshooting prediction quality
 
 Read this file when users need:
 - Help interpreting confidence scores
 - Understanding when NOT to use DiffDock
-- Guidance on combining with other tools
+- Guidance on combining with other utilities
 - Validation strategies
 
 **`workflows_examples.md`**: Comprehensive workflow examples
@@ -427,7 +427,7 @@ Read this file when users need:
 
 Read this file when users need:
 - Complete workflow examples with code
-- Integration with GNINA, OpenMM, or other tools
+- Integration with GNINA, OpenMM, or other utilities
 - Virtual screening workflows
 - Ensemble docking procedures
 

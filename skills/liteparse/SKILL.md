@@ -15,7 +15,7 @@ metadata:
 
 LiteParse is a fast, open-source document parser (Rust core, Python/Node bindings) focused on **local, layout-aware text extraction** with bounding boxes. It does not produce Markdown and does not call cloud LLMs. Outputs are **plain text** (layout-preserved) or **structured JSON** with per-page `text_items` (position, font metadata, optional confidence).
 
-**Version note:** Examples target **liteparse 2.0.0** (PyPI, May 2026). The upstream V1 branch is legacy; this skill documents **V2 / main** only.
+**Version note:** Examples target **liteparse 2.0.0** (PyPI, May). The upstream V1 branch is legacy; this skill documents **V2 / main** only.
 
 For parser selection vs MarkItDown, the `pdf` skill, or LlamaParse, see `references/choosing_a_parser.md`.
 

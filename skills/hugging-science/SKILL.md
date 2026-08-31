@@ -27,7 +27,7 @@ Engage this skill when the user's task involves AI/ML applied to science. Common
 - Asks about specific known scientific models (Evo-2, ESM2, BoltzGen, Nucleotide Transformer, AlphaFold-derived, etc.)
 - Needs an interactive demo for a scientific task (binder design, theorem proving, etc.)
 
-If the task is generic ML (recommendation systems, chatbot RAG, vision on cats and dogs), this skill is **not** the right tool — defer to general HF Hub knowledge instead.
+If the task is generic ML (recommendation systems, chatbot RAG, vision on cats and dogs), this skill is **not** the right utility — defer to general HF Hub knowledge instead.
 
 ## Core workflow
 

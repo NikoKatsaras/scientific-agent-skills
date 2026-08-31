@@ -1,6 +1,6 @@
 ---
 name: tiledbvcf
-description: Efficient storage and retrieval of genomic variant data using TileDB. Scalable VCF/BCF ingestion, incremental sample addition, compressed storage, parallel queries, and export capabilities for population genomics.
+description: Use when this skill applies. Efficient storage and retrieval of genomic variant data using TileDB. Scalable VCF/BCF ingestion, incremental sample addition, compressed storage, parallel queries, and export capabilities for population genomics.
 license: MIT license
 metadata:
   version: "1.0"
@@ -15,7 +15,7 @@ TileDB-VCF is a high-performance C++ library with Python and CLI interfaces for 
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Learning TileDB-VCF concepts and workflows
 - Prototyping genomics analyses and pipelines
 - Working with small-to-medium datasets (< 1000 samples)

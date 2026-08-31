@@ -1,7 +1,7 @@
 ---
 name: scientific-critical-thinking
 description: Evaluate scientific claims and evidence quality. Use for assessing experimental design validity, identifying biases and confounders, applying evidence grading frameworks (GRADE, Cochrane Risk of Bias), or teaching critical analysis. Best for understanding evidence quality, identifying flaws. For formal peer review writing use peer-review.
-allowed-tools: Read Write Edit
+allowed-utilities: Read Write Edit
 license: MIT license
 compatibility: Analytical guidance needs no network. Optional figures via the scientific-schematics skill require OPENROUTER_API_KEY and outbound API access to OpenRouter.
 metadata:
@@ -17,7 +17,7 @@ Critical thinking is a systematic process for evaluating scientific rigor. Asses
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 - Evaluating research methodology and experimental design
 - Assessing statistical validity and evidence quality
 - Identifying biases and confounding in studies
@@ -38,7 +38,7 @@ Only add figures when the **user explicitly requests** a diagram (for example, a
 
 **How to create figures:**
 - **Preferred:** Use the **scientific-schematics** skill for AI-generated diagrams from a natural-language description
-- **Alternative:** Build figures in your usual tools (draw.io, PowerPoint, matplotlib, etc.)
+- **Alternative:** Build figures in your usual utilities (draw.io, PowerPoint, matplotlib, etc.)
 
 From the `scientific-schematics` skill directory, with `OPENROUTER_API_KEY` set:
 
@@ -133,7 +133,7 @@ Identify and evaluate potential sources of bias that could distort findings.
    - **Observer bias:** Could expectations influence observations?
    - **Recall bias:** Are retrospective reports systematically inaccurate?
    - **Social desirability:** Are responses biased toward acceptability?
-   - **Instrument bias:** Do measurement tools systematically err?
+   - **Instrument bias:** Do measurement utilities systematically err?
    - Evaluate blinding, validation, and measurement objectivity
 
 4. **Analysis Biases**
@@ -239,7 +239,7 @@ Evaluate the strength and quality of evidence systematically.
    **Important:** Higher-level designs aren't always better quality. A well-designed observational study can be stronger than a poorly-conducted RCT.
 
 2. **Quality Within Design Type**
-   - Risk of bias assessment (use appropriate tool: Cochrane RoB 2 for RCTs, ROBINS-I for non-randomized studies, Newcastle-Ottawa, etc.)
+   - Risk of bias assessment (use appropriate utility: Cochrane RoB 2 for RCTs, ROBINS-I for non-randomized studies, Newcastle-Ottawa, etc.)
    - Methodological rigor
    - Transparency and reporting completeness
    - Conflicts of interest
@@ -276,7 +276,7 @@ Evaluate the strength and quality of evidence systematically.
    - Specificity of relationship
    - Strength of association
 
-**Reference:** See `references/evidence_hierarchy.md` for detailed hierarchy, GRADE system, and quality assessment tools.
+**Reference:** See `references/evidence_hierarchy.md` for detailed hierarchy, GRADE system, and quality assessment utilities.
 
 ### 5. Logical Fallacy Identification
 

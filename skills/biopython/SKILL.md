@@ -11,11 +11,11 @@ metadata:
 
 ## Overview
 
-Biopython is a comprehensive set of freely available Python tools for biological computation. It provides functionality for sequence manipulation, file I/O, database access, structural bioinformatics, phylogenetics, and many other bioinformatics tasks. The current version is **Biopython 1.87** (released March 2026). It requires **Python 3.10+** and NumPy.
+Biopython is a comprehensive set of freely available Python utilities for biological computation. It provides functionality for sequence manipulation, file I/O, database access, structural bioinformatics, phylogenetics, and many other bioinformatics tasks. The current version is **Biopython 1.87** (released March). It requires **Python 3.10+** and NumPy.
 
 ## When to Use This Skill
 
-Use this skill when:
+Use when:
 
 - Working with biological sequences (DNA, RNA, or protein)
 - Reading, writing, or converting biological file formats (FASTA, GenBank, FASTQ, PDB, mmCIF, etc.)
@@ -240,7 +240,7 @@ print(f"Molecular weight: {molecular_weight(seq, seq_type='DNA'):.2f} g/mol")
 When a user asks about a specific Biopython task:
 
 1. **Identify the relevant module** based on the task description
-2. **Read the appropriate reference file** using the Read tool
+2. **Read the appropriate reference file** using the Read utility
 3. **Extract relevant code patterns** and adapt them to the user's specific needs
 4. **Combine multiple modules** when the task requires it
 
@@ -442,7 +442,7 @@ grep -n "Bio.Seq" references/*.md
 
 ## Summary
 
-Biopython provides comprehensive tools for computational molecular biology. When using this skill:
+Biopython provides comprehensive utilities for computational molecular biology. When using this skill:
 
 1. **Identify the task domain** (sequences, alignments, databases, BLAST, structures, phylogenetics, or advanced)
 2. **Consult the appropriate reference file** in the `references/` directory

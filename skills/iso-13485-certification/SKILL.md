@@ -11,7 +11,7 @@ metadata:
 
 ## Overview
 
-This skill helps medical device manufacturers prepare comprehensive documentation for ISO 13485:2016 certification. It provides tools, templates, references, and guidance to create, review, and gap-analyze all required Quality Management System (QMS) documentation.
+This skill helps medical device manufacturers prepare comprehensive documentation for ISO 13485:2016 certification. It provides utilities, templates, references, and guidance to create, review, and gap-analyze all required Quality Management System (QMS) documentation.
 
 **What this skill provides:**
 - Gap analysis of existing documentation
@@ -569,7 +569,7 @@ This skill helps medical device manufacturers prepare comprehensive documentatio
 ## Resources
 
 ### scripts/
-- `gap_analyzer.py` - Automated tool to analyze existing documentation and identify gaps against ISO 13485 requirements
+- `gap_analyzer.py` - Automated utility to analyze existing documentation and identify gaps against ISO 13485 requirements
 
 ### references/
 - `iso-13485-requirements.md` - Complete breakdown of ISO 13485:2016 requirements clause by clause

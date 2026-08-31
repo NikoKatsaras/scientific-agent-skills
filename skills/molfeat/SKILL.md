@@ -1,6 +1,6 @@
 ---
 name: molfeat
-description: Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.
+description: Use when this skill applies. Molecular featurization for ML (100+ featurizers). ECFP, MACCS, descriptors, pretrained models (ChemBERTa), convert SMILES to features, for QSAR and molecular ML.
 license: Apache-2.0 license
 allowed-tools: Read Write Edit Bash
 compatibility: Requires Python 3.9–3.10 (molfeat 0.11.0 does not support 3.11+). Requires datamol, PyTorch, and optional extras for GNN/transformer models.
@@ -15,11 +15,11 @@ metadata:
 
 Molfeat is a comprehensive Python library for molecular featurization that unifies 100+ pre-trained embeddings and hand-crafted featurizers. Convert chemical structures (SMILES strings or RDKit molecules) into numerical representations for machine learning tasks including QSAR modeling, virtual screening, similarity searching, and deep learning applications. Features fast parallel processing, scikit-learn compatible transformers, and built-in caching.
 
-**Version note:** Examples target **molfeat 0.11.0** (PyPI stable, May 2025). Requires **Python 3.9–3.10** (`requires-python` caps below 3.11). Depends on **datamol ≥0.8.0** and **PyTorch ≥1.13**. Since 0.8.7, prefer datamol `Mol` objects over raw `rdkit.Chem.Mol`. Since 0.10.1, fingerprint calculators use RDKit's `rdFingerprintGenerator` API internally. Since 0.11.0, pretrained models load in memory and base models are set to PyTorch evaluation mode automatically.
+**Version note:** Examples target **molfeat 0.11.0** (PyPI stable, May). Requires **Python 3.9–3.10** (`requires-python` caps below 3.11). Depends on **datamol ≥0.8.0** and **PyTorch ≥1.13**. Since 0.8.7, prefer datamol `Mol` objects over raw `rdkit.Chem.Mol`. Since 0.10.1, fingerprint calculators use RDKit's `rdFingerprintGenerator` API internally. Since 0.11.0, pretrained models load in memory and base models are set to PyTorch evaluation mode automatically.
 
 ## When to Use This Skill
 
-This skill should be used when working with:
+Use when working with:
 - **Molecular machine learning**: Building QSAR/QSPR models, property prediction
 - **Virtual screening**: Ranking compound libraries for biological activity
 - **Similarity searching**: Finding structurally similar molecules
