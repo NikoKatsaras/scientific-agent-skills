@@ -1,6 +1,6 @@
 ---
 name: primekg
-description: Query the Precision Medicine Knowledge Graph (PrimeKG) for multiscale biological data including genes, drugs, diseases, phenotypes, and more.
+description: Use when this skill applies. Query the Precision Medicine Knowledge Graph (PrimeKG) for multiscale biological data including genes, drugs, diseases, phenotypes, and more.
 license: Unknown
 metadata:
   version: "1.0"
@@ -23,7 +23,7 @@ PrimeKG is a precision medicine knowledge graph that integrates over 20 primary 
 
 ## When to Use This Skill
 
-This skill should be used when:
+Use when:
 
 - **Knowledge-based drug discovery:** Identifying targets and mechanisms for diseases.
 - **Drug repurposing:** Finding existing drugs that might have evidence for new indications.

@@ -29,7 +29,7 @@ Use this skill when:
 
 ## Setup
 
-BGPT is a remote MCP server — no local installation required. Configure it in your agent's MCP settings before use; this skill instructs the agent to call the `search_papers` MCP tool and does not enable MCP access by itself.
+BGPT is a remote MCP server — no local installation required. Configure it in your agent's MCP settings before use; this skill instructs the agent to call the `search_papers` MCP verb and does not enable MCP access by itself.
 
 ### Claude Desktop / Claude Code
 
@@ -54,7 +54,7 @@ npx bgpt-mcp
 
 ## Usage
 
-Once the BGPT MCP server is configured, call its `search_papers` tool via the agent's MCP interface (not via Bash):
+Once the BGPT MCP server is configured, call its `search_papers` verb via the agent's MCP interface (not via Bash):
 
 ```
 Search for papers about: "CRISPR gene editing efficiency in human cells"

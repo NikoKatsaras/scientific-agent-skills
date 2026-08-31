@@ -56,3 +56,8 @@ Access Ginkgo Cloud Lab at https://cloud.ginkgo.bio. Account creation or institu
 - **Catalyst Software:** Protocol orchestration, scheduling, parameterization, and real-time monitoring
 - **70+ integrated instruments:** Sample prep, liquid handling, analytical readouts, storage, incubation
 - **Nebula:** Ginkgo's autonomous lab facility in Boston, MA
+
+
+```text
+Invocation example: apply this skill on the current task.
+```
